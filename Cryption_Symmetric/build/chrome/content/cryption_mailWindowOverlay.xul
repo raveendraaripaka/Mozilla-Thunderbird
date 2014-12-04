@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://helloword/locale/helloword.dtd">
+
+<overlay id="cryption_mailWindowOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+             
+    <script src="cryption_mailWindowOverlay.js"/>
+
+    <toolbar id="mail-bar3" class="inline-toolbar chromeclass-toolbar" toolbarname="Mail Toolbar" accesskey="o" fullscreentoolbar="true" mode="full" customizable="true" context="toolbar-context-menu" defaultset="button-getmsg,button-newmsg,button-chat,button-address,Cryption-2,separator,button-tag,qfb-show-filter-bar,spring,gloda-search,button-appmenu">
+        <toolbarbutton id="button-getmsg" type="menu-button" class="toolbarbutton-1" label="Get Messages" tooltiptext="Get new messages" oncommand="MsgGetMessagesForAccount(event.target._folder)" observes="button_getNewMessages" removable="true">
+            <menupopup id="button-getMsgPopup" onpopupshowing="getMsgToolbarMenu_init();" type="folder" expandFolders="false" mode="getMail">
+                <menuitem id="button-getAllNewMsg" label="Get All New Messages" accesskey="G" command="cmd_getMsgsForAuthAccounts"/>
+                <menuseparator id="button-getAllNewMsgSeparator"/>
+            </menupopup>
+        </toolbarbutton>
+        <toolbarbutton id="button-newmsg" class="toolbarbutton-1" label="Write" tooltiptext="Create a new message" command="cmd_newMessage" oncommand="MsgNewMessage(event)" removable="true"/>
+        <toolbarbutton id="button-chat" class="toolbarbutton-1" label="Chat" command="cmd_chat" observes="cmd_chat" tooltiptext="Show the Chat tab" oncommand="goDoCommand('cmd_chat')" removable="true"/>
+        <toolbarbutton id="button-address" class="toolbarbutton-1" label="Address Book" oncommand="toAddressBook();" tooltiptext="Go to the address book" removable="true"/>
+        <toolbarseparator id="separator14175533326251" removable="true"/>
+<!--My toolbar Button-->
+        <toolbarbutton class="toolbarbutton-1" type="menu-button" id="Cryption-2" label="Decryption bar" tooltiptext="Decryption bar" removable="true">
+            <menupopup id="encryptionbar_options">
+                <menuitem id="decryptionbar_options_enable"  label="Enable"  oncommand="status_bar.showDecryptionBar_enable();" type="radio" />
+                <menuitem id="decryptionbar_options_disable" label="Disable" oncommand="status_bar.showDecryptionBar_disable();" type="radio" />
+            </menupopup>
+        </toolbarbutton>
+<!--Ends Here-->
+        <toolbarbutton id="button-tag" type="menu" class="toolbarbutton-1" label="Tag" tooltiptext="Tag messages" command="cmd_tag" removable="true" disabled="true">
+            <menupopup id="button-tagpopup" onpopupshowing="InitMessageTags(this);">
+                <menuitem id="addNewTag" label="New Tag…" accesskey="N" command="cmd_addTag"/>
+                <menuitem id="manageTags" label="Manage Tags…" accesskey="M" command="cmd_manageTags"/>
+                <menuseparator id="button-tagpopup-sep-afterTagAddNew"/>
+                <menuitem id="button-tagRemoveAll" command="cmd_removeTags"/>
+                <menuseparator id="button-afterTagRemoveAllSeparator"/>
+            </menupopup>
+        </toolbarbutton>
+        <toolbarbutton id="qfb-show-filter-bar" class="toolbarbutton-1" type="checkbox" label="Quick Filter" command="cmd_toggleQuickFilterBar" tooltiptext="Toggle the quick filter bar" oncommand="goDoCommand('cmd_toggleQuickFilterBar');" removable="true" checked="true" disabled="true">
+            <observes element="view_toolbars_popup_quickFilterBar" attribute="checked"/>
+        </toolbarbutton>
+        <toolbarspring id="spring14175533326272" flex="1" removable="true"/>
+        <toolbaritem id="gloda-search" insertafter="button-stop" title="Global Search" align="center" flex="1" class="chromeclass-toolbar-additional" removable="true">
+            <textbox id="searchInput" flex="1" type="glodacomplete" searchbutton="true" autocompletesearch="gloda" autocompletepopup="PopupGlodaAutocomplete" autocompletesearchparam="global" enablehistory="false" timeout="200" maxlength="192" placeholder="Search… &lt;Ctrl+K&gt;" emptytextbase="Search… #1" keyLabelNonMac="&lt;Ctrl+K&gt;" keyLabelMac="&lt;⌘K&gt;" sizetopopup="pref">
+                <hbox>
+                    <image class="gloda-search-icon" onclick="document.getElementById('searchInput').doSearch();"/>
+                </hbox>
+            </textbox>
+        </toolbaritem>
+        <toolbarbutton id="button-appmenu" class="toolbarbutton-1 button-appmenu" label="AppMenu" tooltiptext="Display the Thunderbird Menu" removable="true"/></toolbar>
+
+    <vbox id="messagepanebox"  >
+        <groupbox align="center">
+            <hbox id = "decryptionbar" hidden="false" align="center">
+                <hbox align="left">
+                    <vbox align="right" flex="1">
+                        <label control="password" value="Password : " type="password"  />
+                    </vbox>
+                    <vbox align="center">
+                        <textbox id="password" width="400" placeholder="Enter your password" style="margin: 0;" resizable="true"/>
+                    </vbox>
+                </hbox>
+                <hbox align="right">
+                    <button id="decrypt_data" label="Decrypt Mail" oncommand="status_bar.decrypt_mail();"/>
+                    <button id="button_options" label="Quick toolkit" oncommand="status_bar.onMenuItemCommand();"/>
+                    <button id="button_close" label="Close" oncommand="status_bar.close();"/>
+                </hbox>
+            </hbox>
+        </groupbox>
+
+        <hbox id = "wrapper" flex="1" style="overflow:auto" hidden="true">
+            <description id="desc" style="width: 300px"></description>
+        </hbox>
+        
+    </vbox>
+  
+</overlay>

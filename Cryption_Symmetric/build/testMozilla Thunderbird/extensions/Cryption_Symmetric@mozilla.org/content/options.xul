@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://Cryption_Symmetric/locale/options.dtd">
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="Options-window" title="Encryption - Decryption Tool" >
+
+    <script src="options.js"/>
+   
+    <vbox flex="1" >
+        <hbox >
+            <vbox flex="1">
+                <groupbox flex="1" align="left" >
+                    <hbox>
+                        <vbox align="right" flex="1">
+                            <label control="some-password" value="Password : " type="password"  />
+                            <label control="hint-password" value="Password Hint : " />
+                        </vbox>
+                        <vbox align="center">
+                            <textbox id="some-password" width="400" placeholder="Enter your password" />
+                            <textbox id="hint-password" width="400" placeholder="Password hint, its optional"/>
+                        </vbox>
+                    </hbox>
+                </groupbox >
+            </vbox>
+        </hbox>
+        <hbox>
+            <groupbox>
+                <caption label = "Encryption"/>
+                <vbox >
+                    <textbox id="Encrypt" placeholder="Enter text to be encrypted" width="625" height="625" multiline="true" focused="true" autocompletesearch="history"/>
+                    <button id="Encrypt-button" style="background-color: grey;" label="Encryption" width="20" oncommand="Cryption_Symmetric_Options.encrypt();"  />
+                </vbox>
+            </groupbox>
+
+            <groupbox>
+                <caption label = "Decryption"/>
+                <vbox >
+                    <textbox id="Decrypt" placeholder="Enter text to be decrypted" width="625" height="625" multiline="true" focused="true" autocompletesearch="history"/>
+                    <button id="Decrypt-button" label="Decryption" tooltiptext="Decrypt the above text" width="20" oncommand="Cryption_Symmetric_Options.decrypt();" />
+                </vbox>
+            </groupbox>
+        </hbox>
+    </vbox>
+</window>

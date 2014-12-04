@@ -1,0 +1,15 @@
+content Cryption_Symmetric                                          jar:chrome/Cryption_Symmetric.jar!/content/
+skin        Cryption_Symmetric        classic/1.0                  jar:chrome/Cryption_Symmetric.jar!/skin/
+
+locale        Cryption_Symmetric        en-US                      jar:chrome/Cryption_Symmetric.jar!/locale/en-US/
+
+style        chrome://global/content/customizeToolbar.xul         chrome://Cryption_Symmetric/skin/overlay.css
+
+overlay        chrome://browser/content/browser.xul         chrome://Cryption_Symmetric/content/overlay.xul
+overlay        chrome://messenger/content/messenger.xul         chrome://Cryption_Symmetric/content/overlay.xul
+overlay        chrome://messenger/content/messenger.xul         chrome://Cryption_Symmetric/content/overlay.xul
+overlay        chrome://messenger/content/mailWindowOverlay.xul         chrome://Cryption_Symmetric/content/cryption_mailWindowOverlay.xul
+
+overlay        chrome://messenger/content/messengercompose/messengercompose.xul         chrome://Cryption_Symmetric/content/cryption_msgcomposeWindow.xul
+
+

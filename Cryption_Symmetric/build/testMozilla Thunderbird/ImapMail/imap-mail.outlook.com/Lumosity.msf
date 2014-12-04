@@ -1,0 +1,98 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=charSetOverride)(B9=charSet)(BA=highestRecordedUID)
+  (BB=ns:msg:db:row:scope:pending:all)(BC=ns:msg:db:table:kind:pending)
+  (BD=dateReceived)(BE=ProtoThreadFlags)(BF=folderName)
+  (C0=ns:msg:db:row:scope:ops:all)(C1=ns:msg:db:table:kind:ops)
+  (C2=retainBy)(C3=daysToKeepHdrs)(C4=numHdrsToKeep)(C5=daysToKeepBodies)
+  (C6=keepUnreadOnly)(C7=useServerDefaults)(C8=cleanupBodies)
+  (C9=applyToFlaggedMessages)(CA=useServerRetention)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=bccList)
+  (8F=msgThreadId)(90=threadId)(91=threadFlags)(92=threadNewestMsgDate)
+  (93=children)(94=unreadChildren)(95=threadSubject)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=MRUTime)(B0=sortType)
+  (B1=sortOrder)(B2=viewFlags)(B3=viewType)(B4=sortColumns)
+  (B5=columnStates)(B6=highestModSeq)(B7=imapFlags)>
+<(91=186a1)(8D=5421faa6)(85=0)(80=1)>
+[1:m(^9C^91)(^90^91)(^92^8D)(^91=0)(^93=1)]
+<(97=186a2)(95=5421fe36)>[2:m(^9C^97)(^90^97)(^92^95)(^91=0)(^93=1)]
+<(9D=186a3)(9B=5424d6c1)>[3:m(^9C^9D)(^90^9D)(^92^9B)(^91=0)(^93=1)]
+<(A3=186a4)(A1=54262840)>[4:m(^9C^A3)(^90^A3)(^92^A1)(^91=0)(^93=1)]
+<(A9=186a5)(A7=542779c3)>[5:m(^9C^A9)(^90^A9)(^92^A7)(^91=0)(^93=1)]
+<(AF=186a7)(AD=542a1cc6)>[6:m(^9C^AF)(^90^AF)(^92^AD)(^91=0)(^93=1)]
+<(B5=186a8)(B3=54432945)>[7:m(^9C^B5)(^90^B5)(^92^B3)(^91=0)(^93=1)]
+
+<(89=Lumosity <info@email.lumosity.com>)(8A=raveendraaripaka@hotmail.com)
+  (8B=Welcome to Lumosity!)(8C
+    =5421faa69ff3a_396f3fed52723eac37817@app-worker6.sl.lumoslabs.com.mail)
+  (8E=UTF-8)(8F=fe93)(90=ffffffff)>
+{186A1:^80 {(k^98:c)(s=9)1:m } [186A1(^88=1)(^8B=0)(^82^89)(^85^8A)(^81^8B)
+    (^83^8C)(^86^8D)(^BD^8D)(^89=1)(^96^8E)(^87^8F)(^9B^90)(^8F^91)
+    (^BE=0)]}
+
+<(92=Lumosity <newsletter@email.lumosity.com>)(93
+    =Raveendra, your Fit Test results are in:)(94
+    =5421fe36ada03_55cd3ff71834bea412169b@app73.sl.lumoslabs.com.mail)
+  (96=d9d1)>
+{186A2:^80 {(k^98:c)(s=9)2:m } [186A2(^88=1)(^8B=0)(^82^92)(^85^8A)(^81^93)
+    (^83^94)(^86^95)(^BD^95)(^89=1)(^96^8E)(^87^96)(^9B^90)(^8F^97)
+    (^BE=0)]}
+
+<(99=The science behind the Lumosity program:)(9A
+    =5424d6c183cd0_1cd73fb2d5e97eac65613@app-worker4.sl.lumoslabs.com.mail)
+  (9C=13375)(9F=Click, Click, Brain Training)(A0
+    =5426284065a8_385e3f9392121e9c9398@app-worker7.sl.lumoslabs.com.mail)
+  (A2=dcf9)(A5
+    =Reminder: today is the last day to save on a Lumosity subscription)
+  (A6=542779c3ccc65_61873fce36869ea01094eb@app40.sl.lumoslabs.com.mail)
+  (A8=e3c8)(AB==?UTF-8?Q?Lumosity=E2=80=99s_Human_Cognition_Project:?=)
+  (AC=542a1cc6ae728_b563fcd60785eac251d4@app73.sl.lumoslabs.com.mail)
+  (AE=122fe)(B1
+    ==?UTF-8?Q?You=E2=80=99re_ready_to_try_this_advanced_game:?=)(B2
+    =54432945f4233_66b53f818cff5ea457733@app-worker8.sl.lumoslabs.com.mail)
+  (B4=d1df)>
+{1:^80 {(k^97:c)(s=9)} 186A1 186A2 
+  [186A3(^88=1)(^8B=0)(^82^92)(^85^8A)(^81^99)(^83^9A)(^86^9B)(^BD^9B)
+    (^89=1)(^96^8E)(^87^9C)(^9B^90)(^8F^9D)(^BE=0)]
+  [186A4(^88=1)(^8B=0)(^82^92)(^85^8A)(^81^9F)(^83^A0)(^86^A1)(^BD^A1)
+    (^89=1)(^96^8E)(^87^A2)(^9B^90)(^8F^A3)(^BE=0)]
+  [186A5(^88=1)(^8B=0)(^82^92)(^85^8A)(^81^A5)(^83^A6)(^86^A7)(^BD^A7)
+    (^89=1)(^96^8E)(^87^A8)(^9B^90)(^8F^A9)(^BE=0)]
+  [186A7(^88=1)(^8B=0)(^82^92)(^85^8A)(^81^AB)(^83^AC)(^86^AD)(^BD^AD)
+    (^89=1)(^96^8E)(^87^AE)(^9B^90)(^8F^AF)(^BE=0)]
+  [186A8(^88=1)(^8B=0)(^82^92)(^85^8A)(^81^B1)(^83^B2)(^86^B3)(^BD^B3)
+    (^89=1)(^96^8E)(^87^B4)(^9B^90)(^8F^B5)(^BE=0)]}
+{186A3:^80 {(k^98:c)(s=9)3:m } 186A3 }
+{186A4:^80 {(k^98:c)(s=9)4:m } 186A4 }
+{186A5:^80 {(k^98:c)(s=9)5:m } 186A5 }
+{186A7:^80 {(k^98:c)(s=9)6:m } 186A7 }
+{186A8:^80 {(k^98:c)(s=9)7:m } 186A8 }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [186A1(^95^8B)]
+  [186A2(^95^93)]
+  [186A3(^95^99)]
+  [186A4(^95^9F)]
+  [186A5(^95^A5)]
+  [186A7(^95^AB)]
+  [186A8(^95^B1)]}
+
+<(81=Lumosity)(82=8082014)(83=1417630465)(84=12)(86=)(87
+    ={"threadCol":{"visible":true},"attachmentCol":{"visible":true},"flaggedCo\
+l":{"visible":true},"subjectCol":{"visible":true},"unreadButtonColHeader":{"vi\
+sible":true},"senderCol":{"visible":true},"recipientCol":{"visible":false},"ju\
+nkStatusCol":{"visible":true},"dateCol":{"visible":true},"locationCol":{"visib\
+le":false}})(88=347377e)(B6=7)>
+{1:^9F {(k^A0:c)(s=9)} 
+  [1(^AC=1)(^AD=1)(^AE^81)(^88^82)(^A7^81)(^AF^83)(^B0=12)(^B1=1)(^B2=0)
+    (^B3=0)(^B4=)(^B5^87)(^B6=0)(^B7=0)(^A8^88)(^BA^B5)(^A1=7)(^A6^B5)
+    (^CA=1)]}

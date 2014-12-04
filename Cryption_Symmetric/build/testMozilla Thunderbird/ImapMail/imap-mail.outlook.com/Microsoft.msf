@@ -1,0 +1,589 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=charSetOverride)(B9=charSet)(BA=highestRecordedUID)
+  (BB=ns:msg:db:row:scope:pending:all)(BC=ns:msg:db:table:kind:pending)
+  (BD=dateReceived)(BE=ProtoThreadFlags)(BF=folderName)(C0=replyTo)
+  (C1=ns:msg:db:row:scope:ops:all)(C2=ns:msg:db:table:kind:ops)
+  (C3=storeToken)(C4=gloda-id)(C5=gloda-dirty)(C6=junkscore)(C7=keywords)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=bccList)
+  (8F=msgThreadId)(90=threadId)(91=threadFlags)(92=threadNewestMsgDate)
+  (93=children)(94=unreadChildren)(95=threadSubject)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=MRUTime)(B0=sortType)
+  (B1=sortOrder)(B2=viewFlags)(B3=viewType)(B4=sortColumns)
+  (B5=columnStates)(B6=highestModSeq)(B7=imapFlags)>
+<(114=186b4)(112=52279211)(85=0)(80=1)>
+[14:m(^9C^114)(^90^114)(^92^112)(^91=0)(^93=1)]
+<(11B=186b5)(119=523a051a)>[15:m(^9C^11B)(^90^11B)(^92^119)(^91=0)(^93=1)]
+<(122=186b6)(120=524c8bb0)>[16:m(^9C^122)(^90^122)(^92^120)(^91=0)(^93=1)]
+<(129=186b7)(127=525ee972)>[17:m(^9C^129)(^90^129)(^92^127)(^91=0)(^93=1)]
+<(130=186b8)(12E=52717681)>[18:m(^9C^130)(^90^130)(^92^12E)(^91=0)(^93=1)]
+<(137=186b9)(135=5283c3d0)>[19:m(^9C^137)(^90^137)(^92^135)(^91=0)(^93=1)]
+<(13E=186ba)(13C=529fb680)>[1A:m(^9C^13E)(^90^13E)(^92^13C)(^91=0)(^93=1)]
+<(145=186bb)(143=52b21ab5)>[1B:m(^9C^145)(^90^145)(^92^143)(^91=0)(^93=1)]
+<(14C=186bc)(14A=52b4be01)>[1C:m(^9C^14C)(^90^14C)(^92^14A)(^91=0)(^93=1)]
+<(153=186bd)(151=52cdcc59)>[1D:m(^9C^153)(^90^153)(^92^151)(^91=0)(^93=1)]
+<(15A=186be)(158=52e02fad)>[1E:m(^9C^15A)(^90^15A)(^92^158)(^91=0)(^93=1)]
+<(161=186bf)(15F=52f2a376)>[1F:m(^9C^161)(^90^161)(^92^15F)(^91=0)(^93=1)]
+<(168=186c0)(166=533c751d)>[20:m(^9C^168)(^90^168)(^92^166)(^91=0)(^93=1)]
+<(16F=186c1)(16D=534ef72c)>[21:m(^9C^16F)(^90^16F)(^92^16D)(^91=0)(^93=1)]
+<(176=186c2)(174=53615f3e)>[22:m(^9C^176)(^90^176)(^92^174)(^91=0)(^93=1)]
+<(17D=186c3)(17B=5373d54f)>[23:m(^9C^17D)(^90^17D)(^92^17B)(^91=0)(^93=1)]
+<(183=186c4)(181=538d3588)>[24:m(^9C^183)(^90^183)(^92^181)(^91=0)(^93=1)]
+<(189=186c5)(187=538e03a1)>[25:m(^9C^189)(^90^189)(^92^187)(^91=0)(^93=1)]
+<(190=186c6)(18E=5398e8a3)>[26:m(^9C^190)(^90^190)(^92^18E)(^91=0)(^93=1)]
+<(197=186c7)(195=53ab551f)>[27:m(^9C^197)(^90^197)(^92^195)(^91=0)(^93=1)]
+<(19E=186eb)(19C=53866ec3)>[28:m(^9C^19E)(^90^19E)(^92^19C)(^91=0)(^93=1)]
+<(1A5=186ec)(1A3=53bdd1b5)>[29:m(^9C^1A5)(^90^1A5)(^92^1A3)(^91=0)(^93=1)]
+<(90=186a1)(8D=507cfbc5)>[1:m(^9C^90)(^90^90)(^92^8D)(^91=0)(^93=1)]
+<(98=186a2)(95=507cbdda)>[2:m(^9C^98)(^90^98)(^92^95)(^91=0)(^93=1)]
+<(A0=186a3)(9E=5085497e)>[3:m(^9C^A0)(^90^A0)(^92^9E)(^91=0)(^93=1)]
+<(A7=186a4)(A5=50ef5797)>[4:m(^9C^A7)(^90^A7)(^92^A5)(^91=0)(^93=1)]
+<(AF=186a5)(AD=51142f7e)>[5:m(^9C^AF)(^90^AF)(^92^AD)(^91=0)(^93=1)]
+<(B5=186a6)(B3=51232b5b)>[6:m(^9C^B5)(^90^B5)(^92^B3)(^91=0)(^93=1)]
+<(BC=186a7)(BA=51279871)>[7:m(^9C^BC)(^90^BC)(^92^BA)(^91=0)(^93=1)]
+<(C2=186a8)(C0=514d47a4)>[8:m(^9C^C2)(^90^C2)(^92^C0)(^91=0)(^93=1)]
+<(C9=186a9)(C7=514f177a)>[9:m(^9C^C9)(^90^C9)(^92^C7)(^91=0)(^93=1)]
+<(D0=186aa)(CE=5180084e)>[A:m(^9C^D0)(^90^D0)(^92^CE)(^91=0)(^93=1)]
+<(D6=186ab)(D4=518169fd)>[B:m(^9C^D6)(^90^D6)(^92^D4)(^91=0)(^93=1)]
+<(DD=186ac)(DB=51817609)>[C:m(^9C^DD)(^90^DD)(^92^DB)(^91=0)(^93=1)]
+<(E4=186ad)(E2=51a681b6)>[D:m(^9C^E4)(^90^E4)(^92^E2)(^91=0)(^93=1)]
+<(EB=186ae)(E9=51ada23e)>[E:m(^9C^EB)(^90^EB)(^92^E9)(^91=0)(^93=1)]
+<(F2=186af)(F0=51b8df8d)>[F:m(^9C^F2)(^90^F2)(^92^F0)(^91=0)(^93=1)]
+<(F9=186b0)(F7=51ddd173)>[10:m(^9C^F9)(^90^F9)(^92^F7)(^91=0)(^93=1)]
+<(100=186b1)(FE=51f03e4e)>[11:m(^9C^100)(^90^100)(^92^FE)(^91=0)(^93=1)]
+<(107=186b2)(105=5202ae84)>[12:m(^9C^107)(^90^107)(^92^105)(^91=0)(^93=1)]
+<(10D=186b3)(10B=52151df9)>[13:m(^9C^10D)(^90^10D)(^92^10B)(^91=0)(^93=1)]
+
+<(1A8=81)(D8
+    ="Microsoft" <reply-fe9216747363077f70-887005_HTML-664223142-98449-4757@em\
+ail.microsoftemail.com>)(AA="Microsoft" <Microsoft@e-mail.microsoft.com>)
+  (8A=<raveendraaripaka@hotmail.com>)(D9
+    =TechNet Flash - Windows Azure for your datacenter needs, the PowerShell S\
+cripting Games, and configuring System Center SP1)(DA
+    =6a706ba4-4e06-4bc9-ab6c-c670065d1a9f@xtinp1mta101.xt.local)(22F=15aea)
+  (8F=ffffffff)(22D=120534)(22E=1180980)(230=15b40)(231=4ef)(1ED=76)>
+{186AC:^80 {(k^98:c)(s=9)C:m } [186AC(^88=81)(^C0^D8)(^8B=0)(^82^AA)(^85^8A)
+    (^81^D9)(^83^DA)(^86^DB)(^BD^DB)(^89=1)(^87^22F)(^9B^8F)(^8F^DD)
+    (^BE=0)(^9D^22D)(^C3^22E)(^9E^230)(^8C=4ef)(^C4=76)]}
+
+<(DF
+    ="Microsoft" <reply-fe8d16747c6d057574-887005_HTML-664223142-98449-4763@em\
+ail.microsoftemail.com>)(E0
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIFdpbmRvd3MgOCBzZWN1cml0eSwgd2hh?= =?UTF-8?\
+B?dOKAmXMgaW4gc3RvcmUgZm9yIFdpbmRvd3MgOC4xLCBhbmQgdGhlIDIwMTMg?= =?UTF-8?B?Rmx\
+hc2ggTmV3c2xldHRlciBTdXJ2ZXk=?=)(E1
+    =da1a42cc-18f0-401c-a1a4-64e447ca62d9@xtinmta1145.xt.local)(217=16d0c)
+  (215=c33a6)(216=799654)(218=16d62)(219=807)(21A=72)>
+{186AD:^80 {(k^98:c)(s=9)D:m } [186AD(^88=81)(^C0^DF)(^8B=0)(^82^AA)(^85^8A)
+    (^81^E0)(^83^E1)(^86^E2)(^BD^E2)(^89=1)(^87^217)(^9B^8F)(^8F^E4)
+    (^BE=0)(^9D^215)(^C3^216)(^9E^218)(^8C=807)(^C4=72)]}
+
+<(89=Hotmail Member Services <member_services@live.com>)(8B
+    =Getting started with your mail account)(8C
+    =md5:OaBvX5oP3/vnG5mX2T/eow==)(8E=e97)(1E1=4f4d8)(1E2=324824)(1E3=eed)
+  (1B6=61)(1F3=69)(91="Outlook Team" <member_services@live.com>)(92
+    =raveendraaripaka@hotmail.com)(93=Get to know what's new in Outlook)
+  (94=md5:38zmBRMj3ZDg/rD3aDOoqg==)(96=iso-8859-1)(1E6=113a)(1E4=503c5)
+  (1E5=328645)(1E7=1190)(1E8=4b)(1F4=6a)(9A=donotreply@windowslivemail.com)
+  (9B==?utf-8?B?TWljcm9zb2Z0IGFjY291bnQ=?= <connect@windowslivemail.com>)
+  (9C
+    ==?utf-8?B?WW91J3ZlIGNvbm5lY3RlZCBGYWNlYm9vayB0byB0aGUgUGhvdG9zIGFwcA==?=)
+  (9D=BAY0-OMC2-S17fiDnka00becc49@bay0-omc2-s17.bay0.hotmail.com)(1EB=1cff)
+  (1E9=51555)(1EA=333141)(1EC=1d55)(1F5=6b)(A2
+    =The Messenger Team <servicenotification@email.microsoft.com>)(A3
+    =Important info about your Messenger account)(A4
+    =em.72412673.20130110145150.1.357.11395236.11071401@email.microsoft.com)
+  (1F0=51f1)(1EE=532aa)(1EF=340650)(1F1=5247)(1F2=15a)(1F6=6c)(A9
+    ="Microsoft" <reply-fe8e1672776c037476-866244_HTML-660018302-96766-32903@e\
+mail.microsoftemail.com>)(AB
+    =Microsoft Office Professional Plus 2013: Get Started!)(AC
+    =c3d69778-97c6-4d6c-8567-c9a8c940129a@xtinmta12.xt.local)(1D7=3c9f)
+  (1D5=45b27)(1D6=285479)(1D8=3cf5)(1D9=171)(1DF=67)(B1
+    =Upgrade from Messenger to Skype)(B2
+    =em.98fed229.20130218160700.1.357.5411665.11340301@email.microsoft.com)
+  (1DC=5c66)(1DA=4981c)(1DB=301084)(1DD=5cbc)(1DE=17c)(1E0=68)(B7
+    ="Microsoft" <reply-fe941673766d057b76-866153_HTML-664223142-96766-15@emai\
+l.microsoftemail.com>)(B8
+    =Microsoft Office Professional Plus 2013: Do More!)(B9
+    =40e621a5-40c2-4c74-8a60-9238d2566b7f@xtinmta11.xt.local)(1C5=3ccd)
+  (1C3=38bca)(1C4=232394)(1C6=3d23)(1C7=170)(1D2=64)(BE
+    =Upgrade from Messenger to Skype by April 8th.)(BF
+    =em.6d7d143a.20130321214006.1.357.10777247.11680301@email.microsoft.com)
+  (1CA=5916)(1C8=3c8ed)(1C9=248045)(1CB=596c)(1CC=166)(1D3=65)(C4
+    ="Microsoft" <reply-fe8a16737c6d047573-866153_HTML-664223142-96766-15@emai\
+l.microsoftemail.com>)(C5
+    =Microsoft Office Professional Plus 2013 Evaluation Resources)(C6
+    =5c8432f6-d054-4f13-b5f8-60e896ee6b32@xtinmta416.xt.local)(1CF=3878)
+  (1CD=42259)(1CE=270937)(1D0=38ce)(1D1=155)(1D4=66)(CB
+    =Windows <windows@email2.microsoft.com>)(CC=Erste Schritte mit Windows)
+  (CD=em.b0ca3834.20130430110039.1.98.90187.1014501@email2.microsoft.com)
+  (1BF=c1b6)(1BD=2c9be)(1BE=182718)(1C0=c20c)(1C1=468)(1C2=63)(D2
+    =Vier Aktionen zum Personalisieren von Windows)(D3
+    =em.12857cf6.20130501120923.1.98.90184.1017701@email2.microsoft.com)
+  (1B9=9aee)(1B7=22e7a)(1B8=142970)(1BA=9b44)(1BB=3a4)(1BC=62)(E6
+    ="Microsoft" <reply-fe9816757567037f71-887005_HTML-664223142-98449-4763@em\
+ail.microsoftemail.com>)(E7
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIExlYWRpbmcgdGhlIGVudGVycHJpc2Ug?= =?UTF-8?\
+B?Y2xvdWQgZXJhLCBNaWNyb3NvZnTigJlzIGNsb3VkLWZpcnN0IGFwcHJvYWNo?= =?UTF-8?B?LCB\
+hbmQgV2luZG93cyBTZXJ2ZXIgMjAxMiBSMg==?=)(E8
+    =f1ca3a5e-574f-4a95-94bf-de537691978b@xtinp1mta101.xt.local)(1FF=14ff1)
+  (1FD=6d334)(1FE=447284)(200=15047)(201=75b)(202=6e)(ED
+    ="Microsoft" <reply-fe9216757466037571-887005_HTML-664223142-98449-4763@em\
+ail.microsoftemail.com>)(EE
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIFdoYXTigJlzIG5ldyBpbiBXaW5kb3dz?= =?UTF-8?\
+B?IDguMSBmb3IgSVQgcHJvZmVzc2lvbmFscywgZnJlZSBsaXZlIGV2ZW50OiBs?= =?UTF-8?B?ZWF\
+ybiBob3cgdG8gYnVpbGQgYSBwcml2YXRlIGNsb3Vk?=)(EF
+    =763193c5-8d44-4130-b244-a96e3835588a@xtinmta4142.xt.local)(F1=20d62)
+  (F4
+    ="Microsoft" <reply-fe9816757165067c7d-887005_HTML-664223142-98449-4769@em\
+ail.microsoftemail.com>)(F5
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIFdpbmRvd3MgQXp1cmUgYW5kIHNlY3Vy?= =?UTF-8?\
+B?aXR5IGluIHRoZSBjbG91ZCwgd2hhdOKAmXMgbmV3IGluIFN5c3RlbSBDZW50?= =?UTF-8?B?ZXI\
+gMjAxMiBSMiwgYW5kIGdldCB0aGUgV2luZG93cyA4LjEgUHJldmlldyBJ?= =?UTF-8?B?U08=?=)
+  (F6=416e64c3-2c7e-4d7b-899a-cde8eef53ec0@xtinp1mta101.xt.local)(223
+    =17947)(221=f11b7)(222=987575)(224=1799d)(225=83b)(226=74)(FB
+    ="Microsoft" <reply-fe9b16757067047875-887005_HTML-664223142-98449-4778@em\
+ail.microsoftemail.com>)(FC
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIFdoYXTigJlzIG5ldyBpbiBXaW5kb3dz?= =?UTF-8?\
+B?IFNlcnZlciBhbmQgU3lzdGVtIENlbnRlciAyMDEyIFIyLCBXaW5kb3dzIDgg?= =?UTF-8?B?dHJ\
+vdWJsZXNob290aW5nLCBHZXQgdGhlIE1pY3Jvc29mdCBBc3Nlc3NtZW50?= =?UTF-8?B?IGFuZCBQ\
+bGFubmluZyBUb29sa2l0IDguNQ==?=)(FD
+    =7435729a-5311-4822-8ffa-2b3fe0f73515@xtinmta1145.xt.local)(211=164ba)
+  (20F=ace96)(210=708246)(212=16510)(213=7b6)(214=71)(102
+    ="Microsoft" <reply-fe8c16757360027b73-887005_HTML-664223142-98449-4776@em\
+ail.microsoftemail.com>)(103
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIERvd25sb2FkIHRoZSBXaW5kb3dzIDgu?= =?UTF-8?\
+B?MSBFbnRlcnByaXNlIFByZXZpZXcsIHdoYXTigJlzIG5ldyBpbiBTeXN0ZW0g?= =?UTF-8?B?Q2V\
+udGVyIDIwMTIgUjIsIE1pY3Jvc29mdCBJVOKAmXMgYXBwcm9hY2ggdG8g?= =?UTF-8?B?dGhlIEJy\
+aW5nIFlvdXIgT3duIERldmljZSBjdWx0dXJl?=)(104
+    =7ddecd98-b1d3-4319-90eb-5465c5f8134a@xtinmta1141.xt.local)(20B=156ad)
+  (209=97793)(20A=620435)(20C=15703)(20D=76c)(20E=70)(108
+    ="Microsoft" <reply-fe9416757262077f77-887005_HTML-664223142-98449-4780@em\
+ail.microsoftemail.com>)(109
+    =TechNet Flash - New releases coming October 18: Windows 8.1, Windows Serv\
+er 2012 R2, System Center 2012 R2, and Windows Intune)(10A
+    =84c02a8e-d588-4e6c-9762-452264725de2@xtinp1mta402.xt.local)(229=1798a)
+  (227=108b54)(228=1084244)(22A=179e0)(22B=821)(22C=75)(10F
+    ="Microsoft" <reply-fe8916757d6c077476-887005_HTML-664223142-98449-4782@em\
+ail.microsoftemail.com>)(110
+    =TechNet Flash - Download a free ebook about Windows Server 2012 R2, three\
+ new MVA courses on Windows 8)(111
+    =745bc739-aa42-492b-aeef-b06cf60ed973@xtinp1mta101.xt.local)(113=1f053)
+  (116
+    ="Microsoft" <reply-fe931676756502797c-887005_HTML-664223142-98449-4788@em\
+ail.microsoftemail.com>)(117
+    =TechNet Flash - New MVA Jump Start on Windows Server 2012 R2 storage, Dis\
+count for IT/Dev Connections)(118
+    =0e8642f3-0099-49b2-97e7-57739be46e80@xtinmta4142.xt.local)(27B=1e86a)
+  (279=2755ef)(27A=2577903)(27C=1e8c0)(27D=64d)(11D
+    ="Microsoft" <reply-fe8f16767462037973-887005_HTML-664223142-98449-4790@em\
+ail.microsoftemail.com>)(11E
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIElFMTEgcHJldmlldyBmb3IgV2luZG93?= =?UTF-8?\
+B?cyA3OyBOZXcgTVZBIGV2ZW50czsgUnVubmluZyBPcmFjbGUgc29mdHdhcmUg?= =?UTF-8?B?b24\
+gTWljcm9zb2Z04oCZcyBlbnRlcnByaXNlLWdyYWRlIGNsb3Vk?=)(11F
+    =f8c5182c-5770-49e0-8fdc-57c993578b05@xtinmta1145.xt.local)(121=1fee8)
+  (124
+    ="Microsoft" <reply-fe9716767664017b77-887005_HTML-664223142-98449-4749@em\
+ail.microsoftemail.com>)(125
+    =TechNet Flash - SQL Server 2014 CTP2 now available; Free ebook; How to ru\
+n Office 365 on Windows, iOS, and Android devices)(126
+    =be1c1c00-0365-4bae-903b-e33171b68b02@xtinp1mta402.xt.local)(128=1f91b)
+  (12B
+    ="Microsoft" <reply-fe9016767161037d72-887005_HTML-664223142-98449-9464@em\
+ail.microsoftemail.com>)(12C
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIERvbuKAmXQgbWlzcyB5b3VyIGNoYW5j?= =?UTF-8?\
+B?ZSB0byB3aW4gYW4gWGJveCBPbmUgb3IgYSBTdXJmYWNlIFBybyAyIGFuZCBq?= =?UTF-8?B?b2l\
+uIHRoZSBQb3dlciBCSSBEZW1vIENvbnRlc3Q=?=)(12D
+    =2865e7d0-7d2e-4482-9e6d-2c52b2fbfc81@xtinmta4140.xt.local)(24C=1a1ff)
+  (24A=19a255)(24B=1679957)(24D=1a255)(24E=567)(24F=7b)(132
+    ="Microsoft" <reply-fe9616767364007b74-887005_HTML-664223142-98449-9474@em\
+ail.microsoftemail.com>)(133
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIEdldCBJRTExIGZvciBXaW5kb3dzIDcs?= =?UTF-8?\
+B?IGxlYXJuIHdoYXTigJlzIG5ldyBpbiBXaW5kb3dzIDguMSBhbmQgU3lzdGVt?= =?UTF-8?B?IEN\
+lbnRlciwgYW5kIHdpbiBhIFN1cmZhY2UgUHJv?=)(134
+    =25a966dd-d0dd-4677-973c-2215d2d66d86@xtinmta1267.xt.local)(270=1c071)
+  (26E=23c147)(26F=2343239)(271=1c0c7)(272=5c9)(139
+    ="Microsoft" <reply-fe8a16767d610c7a74-887005_HTML-664223142-98449-9487@em\
+ail.microsoftemail.com>)(13A
+    =TechNet Flash - Raveendra Babu, avoid these top 10 enterprise threats, ge\
+t a free ebook on cloud management, and check out new MVA training opportuniti\
+es)(13B=3dfd5ca9-1cce-49ce-9b52-9af15ae83b6b@xtinp1mta101.xt.local)
+  (264=1b944)(262=204976)(263=2115958)(265=1b99a)(266=5b0)(267=7f)(140
+    ="Microsoft" <reply-fe9716777566077b71-887005_HTML-664223142-98449-9477@em\
+ail.microsoftemail.com>)(141
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIFJhdmVlbmRyYSBCYWJ1LCBjaGVjayBv?= =?UTF-8?\
+B?dXQgdGhlIG5ldyBDbG91ZCBPUyBOZXR3b3JrLCB0YWtlIHRoZSBGbGFzaCBO?= =?UTF-8?B?ZXd\
+zbGV0dGVyIHN1cnZleSwgYW5kIGRvbuKAmXQgbWlzcyB5b3VyIGNoYW5j?= =?UTF-8?B?ZSB0byB3\
+aW4gYW4gWGJveCBPbmUgb3IgU3VyZmFjZSBQcm8gMg==?=)(142
+    =4fdfd243-30ad-4026-9dbf-b32d4b530c67@xtinp1mta101.xt.local)(275=1d38b)
+  (273=25820e)(274=2458126)(276=1d3e1)(277=607)(278=82)(147
+    ="Microsoft" <reply-fe9616777561067871-887005_HTML-664223142-98449-18942@e\
+mail.microsoftemail.com>)(148
+    =Correction to the December 18, 2013 TechNet Flash)(149
+    =a8a7850a-b567-4f0a-809a-65879bc35b9b@xtinp1mta101.xt.local)(1B3=773b)
+  (1B1=1b6e9)(1B2=112361)(1B4=7791)(1B5=1a1)(14E
+    ="Microsoft" <reply-fe8f1677746d057476-887005_HTML-664223142-98449-9477@em\
+ail.microsoftemail.com>)(14F
+    =TechNet Flash - Raveendra Babu, get a free ebook about System Center 2012\
+ R2, join the Power BI Demo contest, and take the Flash Newsletter survey)
+  (150=651d5252-7053-4fec-a2ce-b217d222e60a@xtinmta4142.xt.local)(252
+    =1a9f2)(250=1b44aa)(251=1787050)(253=1aa48)(254=57d)(255=7c)(155
+    ="Microsoft" <reply-fe9716777667017c76-887005_HTML-664223142-98449-9462@em\
+ail.microsoftemail.com>)(156
+    =TechNet Flash - Raveendra Babu, meet user expectations in a consumerized \
+world, try Hyper-V Recovery Manager, and register for Windows Azure Week sessi\
+ons)(157=70b7d83d-1866-44e0-8790-39555737b620@xtinp1mta402.xt.local)
+  (234=17e6e)(232=136074)(233=1269876)(235=17ec4)(236=84a)(237=77)(15C
+    ="Microsoft" <reply-fe8b1677716c077e7c-887005_HTML-664223142-98449-9446@em\
+ail.microsoftemail.com>)(15D
+    =TechNet Flash - Raveendra Babu, learn about new enhancements in Windows I\
+ntune, virtualize your datacenter with free training, and get ready for TechEd\
+ Europe)(15E=280fb1e1-a5fa-48a1-84da-ba9e9a5e192e@xtinp1mta402.xt.local)
+  (21D=17059)(21B=da108)(21C=893192)(21E=170af)(21F=7e0)(220=73)(163
+    ="Microsoft" <reply-fe911678746c047477-887005_HTML-664223142-98449-18830@e\
+mail.microsoftemail.com>)(164
+    =TechNet Flash - Raveendra Babu, meet the Enterprise Mobility Suite, get S\
+QL Server 2014, and start using Microsoft Office on an iPad)(165
+    =c799b51a-ede5-4703-81fa-3bd84aa10899@xtinp1mta402.xt.local)(26A=1bde1)
+  (268=220310)(269=2229008)(26B=1be37)(26C=5c0)(26D=80)(16A
+    ="Microsoft" <reply-fe9216787661007976-887005_HTML-664223142-98449-18835@e\
+mail.microsoftemail.com>)(16B
+    =TechNet Flash - Raveendra Babu, watch the Accelerate Your Insights keynot\
+es, hone your IT skills while playing a game, and learn about DevOps for IT pr\
+os)(16C=e877b9e7-d607-4d33-8e6c-446d182864f7@xtinmta4142.xt.local)(1F9
+    =14ded)(1F7=584f1)(1F8=361713)(1FA=14e43)(1FB=731)(1FC=6d)(171
+    ="Microsoft" <reply-fe88167870650c7473-887005_HTML-664223142-98449-18843@e\
+mail.microsoftemail.com>)(172
+    =TechNet Flash - Raveendra Babu, plan a hybrid cloud with Windows Azure, g\
+et a free ebook, and learn about Windows 8.1 security)(173
+    =33716147-c3e9-46f5-b7cd-ee5aad27d4a8@xtinmta4140.xt.local)(205=153c2)
+  (203=8237b)(204=533371)(206=15418)(207=740)(208=6f)(178
+    ="Microsoft" <reply-fe8416787363037a73-887005_HTML-664223142-98449-18839@e\
+mail.microsoftemail.com>)(179
+    ==?UTF-8?B?VGVjaE5ldCBGbGFzaCAtIFJhdmVlbmRyYSBCYWJ1LCBsZWFybiBh?= =?UTF-8?\
+B?Ym91dCBNaWNyb3NvZnTigJlzIHZpc2lvbiBmb3IgZW50ZXJwcmlzZSBtb2Jp?= =?UTF-8?B?bGl\
+0eSwgd2F0Y2ggVGVjaEVkIGtleW5vdGVzLCBhbmQgdHJ5IEF6dXJlIFJl?= =?UTF-8?B?bW90ZUFw\
+cA==?=)(17A=c57c2ff5-78a2-4755-af9c-ff8a2eee2055@xtinp1mta402.xt.local)
+  (25E=1ad41)(25C=1e9bdf)(25D=2005983)(25F=1ad97)(260=58b)(261=7e)(17F
+    =Das neue Windows)(180
+    =em.9012f3ce.20140528173127.1.98.217674.4227501@email2.microsoft.com)
+  (1AD=d1b2)(1A9=e4e1)(1AC=58593)(1AE=d208)(1AF=412)(1B0=60)(185
+    =Die Grundlagen des neuen Windows)(186
+    =em.32c678ad.20140529135603.1.98.217648.4229001@email2.microsoft.com)
+  (1A7=e48b)(1AA=455)(1AB=5f)(18B
+    ="Microsoft" <reply-fe9316797562047a71-887005_HTML-664223142-98449-18773@e\
+mail.microsoftemail.com>)(18C
+    =TechNet Flash - Raveendra Babu, join Mark Russinovich and Brad Anderson f\
+or the next Hybrid Cloud webinar, and find out why Gartner named Microsoft a C\
+loud IaaS leader)(18D
+    =ce6eb615-9533-4e1d-a05a-7e20852fd732@xtinmta4140.xt.local)(246=19b83)
+  (244=18067c)(245=1574524)(247=19bd9)(248=54e)(249=7a)(192
+    ="Microsoft" <reply-fe8b16797763047a7c-887005_HTML-664223142-98449-18827@e\
+mail.microsoftemail.com>)(193
+    =TechNet Flash - Raveendra Babu, read about the economic impact of Windows\
+ Server 2012 R2, learn about hybrid cloud scenarios from Mark Russinovich, and\
+ use Windows Azure Pack in your datacenter)(194
+    =086a8940-c648-4d13-8185-0ef01d89fff7@xtinp1mta101.xt.local)(240=197fe)
+  (23E=166e28)(23F=1469992)(241=19854)(242=542)(243=79)(199
+    ="Microsoft" <reply-fe8716787d6d037b75-887005_HTML-664223142-98449-18783@e\
+mail.microsoftemail.com>)(19A
+    =TechNet Flash - Raveendra Babu, manage mobile devices, simplify system ma\
+nagement with Windows 8.1 Update, and discover how Office 365 protects your da\
+ta)(19B=8f55f3d9-14c2-4162-b56a-6bbfa1ec158c@xtinp1mta402.xt.local)
+  (23A=18e9a)(238=14df38)(239=1367864)(23B=18ef0)(23C=524)(23D=78)(1A0
+    ="Microsoft" <reply-fe9016797064037b77-887005_HTML-664223142-98449-18813@e\
+mail.microsoftemail.com>)(1A1
+    =TechNet Flash - Raveendra Babu, migrate legacy systems to Windows Server \
+2012 and Microsoft Azure, lead change management in your IT organization, and \
+learn about Windows Azure Pack)(1A2
+    =82eef4c0-4bc9-4be5-9ccd-002a69cbde12@xtinp1mta402.xt.local)(258=1ac97)
+  (256=1ceef2)(257=1896178)(259=1aced)(25A=586)(25B=7d)>
+{1:^80 {(k^97:c)(s=9)} 
+  [186A1(^88=81)(^8B=0)(^82^89)(^85^8A)(^81^8B)(^83^8C)(^86^8D)(^BD^8D)
+    (^89=1)(^87^8E)(^9B^8F)(^8F^90)(^BE=0)(^9D^1E1)(^C3^1E2)(^9E=eed)
+    (^8C=61)(^C4=69)]
+  [186A2(^88=81)(^8B=0)(^82^91)(^85^92)(^81^93)(^83^94)(^86^95)(^BD^95)
+    (^89=1)(^96^96)(^87^1E6)(^9B^8F)(^8F^98)(^BE=0)(^9D^1E4)(^C3^1E5)
+    (^9E^1E7)(^8C=4b)(^C4=6a)]
+  [186A3(^88=81)(^C0^9A)(^8B=0)(^82^9B)(^85^92)(^81^9C)(^83^9D)(^86^9E)
+    (^BD^9E)(^89=1)(^87^1EB)(^9B^8F)(^8F^A0)(^BE=0)(^9D^1E9)(^C3^1EA)
+    (^9E^1EC)(^8C=76)(^C4=6b)]
+  [186A4(^88=81)(^8B=0)(^82^A2)(^85^8A)(^81^A3)(^83^A4)(^86^A5)(^BD^A5)
+    (^89=1)(^87^1F0)(^9B^8F)(^8F^A7)(^BE=0)(^9D^1EE)(^C3^1EF)(^9E^1F1)
+    (^8C=15a)(^C4=6c)]
+  [186A5(^88=81)(^C0^A9)(^8B=0)(^82^AA)(^85^8A)(^81^AB)(^83^AC)(^86^AD)
+    (^BD^AD)(^89=1)(^87^1D7)(^9B^8F)(^8F^AF)(^BE=0)(^9D^1D5)(^C3^1D6)
+    (^9E^1D8)(^8C=171)(^C4=67)]
+  [186A6(^88=81)(^8B=0)(^82^A2)(^85^8A)(^81^B1)(^83^B2)(^86^B3)(^BD^B3)
+    (^89=1)(^87^1DC)(^9B^8F)(^8F^B5)(^BE=0)(^9D^1DA)(^C3^1DB)(^9E^1DD)
+    (^8C=17c)(^C4=68)]
+  [186A7(^88=81)(^C0^B7)(^8B=0)(^82^AA)(^85^8A)(^81^B8)(^83^B9)(^86^BA)
+    (^BD^BA)(^89=1)(^87^1C5)(^9B^8F)(^8F^BC)(^BE=0)(^9D^1C3)(^C3^1C4)
+    (^9E^1C6)(^8C=170)(^C4=64)]
+  [186A8(^88=81)(^8B=0)(^82^A2)(^85^8A)(^81^BE)(^83^BF)(^86^C0)(^BD^C0)
+    (^89=1)(^87^1CA)(^9B^8F)(^8F^C2)(^BE=0)(^9D^1C8)(^C3^1C9)(^9E^1CB)
+    (^8C=166)(^C4=65)]
+  [186A9(^88=81)(^C0^C4)(^8B=0)(^82^AA)(^85^8A)(^81^C5)(^83^C6)(^86^C7)
+    (^BD^C7)(^89=1)(^87^1CF)(^9B^8F)(^8F^C9)(^BE=0)(^9D^1CD)(^C3^1CE)
+    (^9E^1D0)(^8C=155)(^C4=66)]
+  [186AA(^88=81)(^8B=0)(^82^CB)(^85^8A)(^81^CC)(^83^CD)(^86^CE)(^BD^CE)
+    (^89=1)(^87^1BF)(^9B^8F)(^8F^D0)(^BE=0)(^9D^1BD)(^C3^1BE)(^9E^1C0)
+    (^8C=468)(^C4=63)]
+  [186AB(^88=81)(^8B=0)(^82^CB)(^85^8A)(^81^D2)(^83^D3)(^86^D4)(^BD^D4)
+    (^89=1)(^87^1B9)(^9B^8F)(^8F^D6)(^BE=0)(^9D^1B7)(^C3^1B8)(^9E^1BA)
+    (^8C=3a4)(^C4=62)]186AC 186AD 
+  [186AE(^88=81)(^C0^E6)(^8B=0)(^82^AA)(^85^8A)(^81^E7)(^83^E8)(^86^E9)
+    (^BD^E9)(^89=1)(^87^1FF)(^9B^8F)(^8F^EB)(^BE=0)(^9D^1FD)(^C3^1FE)
+    (^9E^200)(^8C=75b)(^C4=6e)]
+  [186AF(^88=1)(^C0^ED)(^8B=0)(^82^AA)(^85^8A)(^81^EE)(^83^EF)(^86^F0)
+    (^BD^F0)(^89=1)(^87^F1)(^9B^8F)(^8F^F2)(^BE=0)]
+  [186B0(^88=81)(^C0^F4)(^8B=0)(^82^AA)(^85^8A)(^81^F5)(^83^F6)(^86^F7)
+    (^BD^F7)(^89=1)(^87^223)(^9B^8F)(^8F^F9)(^BE=0)(^9D^221)(^C3^222)
+    (^9E^224)(^8C=83b)(^C4=74)]
+  [186B1(^88=81)(^C0^FB)(^8B=0)(^82^AA)(^85^8A)(^81^FC)(^83^FD)(^86^FE)
+    (^BD^FE)(^89=1)(^87^211)(^9B^8F)(^8F^100)(^BE=0)(^9D^20F)(^C3^210)
+    (^9E^212)(^8C=7b6)(^C4=71)]
+  [186B2(^88=81)(^C0^102)(^8B=0)(^82^AA)(^85^8A)(^81^103)(^83^104)(^86^105)
+    (^BD^105)(^89=1)(^87^20B)(^9B^8F)(^8F^107)(^BE=0)(^9D^209)(^C3^20A)
+    (^9E^20C)(^8C=76c)(^C4=70)]
+  [186B3(^88=81)(^C0^108)(^8B=0)(^82^AA)(^85^8A)(^81^109)(^83^10A)(^86^10B)
+    (^BD^10B)(^89=1)(^87^229)(^9B^8F)(^8F^10D)(^BE=0)(^9D^227)(^C3^228)
+    (^9E^22A)(^8C=821)(^C4=75)]
+  [186B4(^88=1)(^C0^10F)(^8B=0)(^82^AA)(^85^8A)(^81^110)(^83^111)(^86^112)
+    (^BD^112)(^89=1)(^87^113)(^9B^8F)(^8F^114)(^BE=0)]
+  [186B5(^88=81)(^C0^116)(^8B=0)(^82^AA)(^85^8A)(^81^117)(^83^118)(^86^119)
+    (^BD^119)(^89=1)(^87^27B)(^9B^8F)(^8F^11B)(^BE=0)(^9D^279)(^C3^27A)
+    (^9E^27C)(^8C=64d)]
+  [186B6(^88=1)(^C0^11D)(^8B=0)(^82^AA)(^85^8A)(^81^11E)(^83^11F)(^86^120)
+    (^BD^120)(^89=1)(^87^121)(^9B^8F)(^8F^122)(^BE=0)]
+  [186B7(^88=1)(^C0^124)(^8B=0)(^82^AA)(^85^8A)(^81^125)(^83^126)(^86^127)
+    (^BD^127)(^89=1)(^87^128)(^9B^8F)(^8F^129)(^BE=0)]
+  [186B8(^88=81)(^C0^12B)(^8B=0)(^82^AA)(^85^8A)(^81^12C)(^83^12D)(^86^12E)
+    (^BD^12E)(^89=1)(^87^24C)(^9B^8F)(^8F^130)(^BE=0)(^9D^24A)(^C3^24B)
+    (^9E^24D)(^8C=567)(^C4=7b)]
+  [186B9(^88=81)(^C0^132)(^8B=0)(^82^AA)(^85^8A)(^81^133)(^83^134)(^86^135)
+    (^BD^135)(^89=1)(^87^270)(^9B^8F)(^8F^137)(^BE=0)(^9D^26E)(^C3^26F)
+    (^9E^271)(^8C=5c9)(^C4=81)]
+  [186BA(^88=81)(^C0^139)(^8B=0)(^82^AA)(^85^8A)(^81^13A)(^83^13B)(^86^13C)
+    (^BD^13C)(^89=1)(^87^264)(^9B^8F)(^8F^13E)(^BE=0)(^9D^262)(^C3^263)
+    (^9E^265)(^8C=5b0)(^C4=7f)]
+  [186BB(^88=81)(^C0^140)(^8B=0)(^82^AA)(^85^8A)(^81^141)(^83^142)(^86^143)
+    (^BD^143)(^89=1)(^87^275)(^9B^8F)(^8F^145)(^BE=0)(^9D^273)(^C3^274)
+    (^9E^276)(^8C=607)(^C4=82)]
+  [186BC(^88=81)(^C0^147)(^8B=0)(^82^AA)(^85^8A)(^81^148)(^83^149)(^86^14A)
+    (^BD^14A)(^89=1)(^87^1B3)(^9B^8F)(^8F^14C)(^BE=0)(^9D^1B1)(^C3^1B2)
+    (^9E^1B4)(^8C=1a1)(^C4=61)]
+  [186BD(^88=81)(^C0^14E)(^8B=0)(^82^AA)(^85^8A)(^81^14F)(^83^150)(^86^151)
+    (^BD^151)(^89=1)(^87^252)(^9B^8F)(^8F^153)(^BE=0)(^9D^250)(^C3^251)
+    (^9E^253)(^8C=57d)(^C4=7c)]
+  [186BE(^88=81)(^C0^155)(^8B=0)(^82^AA)(^85^8A)(^81^156)(^83^157)(^86^158)
+    (^BD^158)(^89=1)(^87^234)(^9B^8F)(^8F^15A)(^BE=0)(^9D^232)(^C3^233)
+    (^9E^235)(^8C=84a)(^C4=77)]
+  [186BF(^88=81)(^C0^15C)(^8B=0)(^82^AA)(^85^8A)(^81^15D)(^83^15E)(^86^15F)
+    (^BD^15F)(^89=1)(^87^21D)(^9B^8F)(^8F^161)(^BE=0)(^9D^21B)(^C3^21C)
+    (^9E^21E)(^8C=7e0)(^C4=73)]
+  [186C0(^88=81)(^C0^163)(^8B=0)(^82^AA)(^85^8A)(^81^164)(^83^165)(^86^166)
+    (^BD^166)(^89=1)(^87^26A)(^9B^8F)(^8F^168)(^BE=0)(^9D^268)(^C3^269)
+    (^9E^26B)(^8C=5c0)(^C4=80)]
+  [186C1(^88=81)(^C0^16A)(^8B=0)(^82^AA)(^85^8A)(^81^16B)(^83^16C)(^86^16D)
+    (^BD^16D)(^89=1)(^87^1F9)(^9B^8F)(^8F^16F)(^BE=0)(^9D^1F7)(^C3^1F8)
+    (^9E^1FA)(^8C=731)(^C4=6d)]
+  [186C2(^88=81)(^C0^171)(^8B=0)(^82^AA)(^85^8A)(^81^172)(^83^173)(^86^174)
+    (^BD^174)(^89=1)(^87^205)(^9B^8F)(^8F^176)(^BE=0)(^9D^203)(^C3^204)
+    (^9E^206)(^8C=740)(^C4=6f)]
+  [186C3(^88=81)(^C0^178)(^8B=0)(^82^AA)(^85^8A)(^81^179)(^83^17A)(^86^17B)
+    (^BD^17B)(^89=1)(^87^25E)(^9B^8F)(^8F^17D)(^BE=0)(^9D^25C)(^C3^25D)
+    (^9E^25F)(^8C=58b)(^C4=7e)]
+  [186C4(^88=81)(^8B=0)(^82^CB)(^85^8A)(^81^17F)(^83^180)(^86^181)(^BD^181)
+    (^89=1)(^87^1AD)(^9B^8F)(^8F^183)(^BE=0)(^9D^1A9)(^C3^1AC)(^9E^1AE)
+    (^8C=412)(^C4=60)]
+  [186C5(^88=81)(^8B=0)(^82^CB)(^85^8A)(^81^185)(^83^186)(^86^187)(^BD^187)
+    (^89=1)(^87^1A7)(^9B^8F)(^8F^189)(^BE=0)(^9D=0)(^C3=0)(^9E^1A9)
+    (^8C=455)(^C4=5f)]
+  [186C6(^88=81)(^C0^18B)(^8B=0)(^82^AA)(^85^8A)(^81^18C)(^83^18D)(^86^18E)
+    (^BD^18E)(^89=1)(^87^246)(^9B^8F)(^8F^190)(^BE=0)(^9D^244)(^C3^245)
+    (^9E^247)(^8C=54e)(^C4=7a)]
+  [186C7(^88=81)(^C0^192)(^8B=0)(^82^AA)(^85^8A)(^81^193)(^83^194)(^86^195)
+    (^BD^195)(^89=1)(^87^240)(^9B^8F)(^8F^197)(^BE=0)(^9D^23E)(^C3^23F)
+    (^9E^241)(^8C=542)(^C4=79)]
+  [186EB(^88=81)(^C0^199)(^8B=0)(^82^AA)(^85^8A)(^81^19A)(^83^19B)(^86^19C)
+    (^BD^19C)(^89=1)(^87^23A)(^9B^8F)(^8F^19E)(^BE=0)(^9D^238)(^C3^239)
+    (^9E^23B)(^8C=524)(^C4=78)]
+  [186EC(^88=81)(^C0^1A0)(^8B=0)(^82^AA)(^85^8A)(^81^1A1)(^83^1A2)(^86^1A3)
+    (^BD^1A3)(^89=1)(^87^258)(^9B^8F)(^8F^1A5)(^BE=0)(^9D^256)(^C3^257)
+    (^9E^259)(^8C=586)(^C4=7d)]}
+{186AE:^80 {(k^98:c)(s=9)E:m } 186AE }
+{186AF:^80 {(k^98:c)(s=9)F:m } 186AF }
+{186B0:^80 {(k^98:c)(s=9)10:m } 186B0 }
+{186B1:^80 {(k^98:c)(s=9)11:m } 186B1 }
+{186B2:^80 {(k^98:c)(s=9)12:m } 186B2 }
+{186B3:^80 {(k^98:c)(s=9)13:m } 186B3 }
+{186B4:^80 {(k^98:c)(s=9)14:m } 186B4 }
+{186B5:^80 {(k^98:c)(s=9)15:m } 186B5 }
+{186B6:^80 {(k^98:c)(s=9)16:m } 186B6 }
+{186B7:^80 {(k^98:c)(s=9)17:m } 186B7 }
+{186B8:^80 {(k^98:c)(s=9)18:m } 186B8 }
+{186B9:^80 {(k^98:c)(s=9)19:m } 186B9 }
+{186BA:^80 {(k^98:c)(s=9)1A:m } 186BA }
+{186BB:^80 {(k^98:c)(s=9)1B:m } 186BB }
+{186BC:^80 {(k^98:c)(s=9)1C:m } 186BC }
+{186BD:^80 {(k^98:c)(s=9)1D:m } 186BD }
+{186BE:^80 {(k^98:c)(s=9)1E:m } 186BE }
+{186EB:^80 {(k^98:c)(s=9)28:m } 186EB }
+{186BF:^80 {(k^98:c)(s=9)1F:m } 186BF }
+{186EC:^80 {(k^98:c)(s=9)29:m } 186EC }
+{186C0:^80 {(k^98:c)(s=9)20:m } 186C0 }
+{186C1:^80 {(k^98:c)(s=9)21:m } 186C1 }
+{186C2:^80 {(k^98:c)(s=9)22:m } 186C2 }
+{186C3:^80 {(k^98:c)(s=9)23:m } 186C3 }
+{186C4:^80 {(k^98:c)(s=9)24:m } 186C4 }
+{186C5:^80 {(k^98:c)(s=9)25:m } 186C5 }
+{186C6:^80 {(k^98:c)(s=9)26:m } 186C6 }
+{186C7:^80 {(k^98:c)(s=9)27:m } 186C7 }
+{186A1:^80 {(k^98:c)(s=9)1:m } 186A1 }
+{186A2:^80 {(k^98:c)(s=9)2:m } 186A2 }
+{186A3:^80 {(k^98:c)(s=9)3:m } 186A3 }
+{186A4:^80 {(k^98:c)(s=9)4:m } 186A4 }
+{186A5:^80 {(k^98:c)(s=9)5:m } 186A5 }
+{186A6:^80 {(k^98:c)(s=9)6:m } 186A6 }
+{186A7:^80 {(k^98:c)(s=9)7:m } 186A7 }
+{186A8:^80 {(k^98:c)(s=9)8:m } 186A8 }
+{186A9:^80 {(k^98:c)(s=9)9:m } 186A9 }
+{186AA:^80 {(k^98:c)(s=9)A:m } 186AA }
+{186AB:^80 {(k^98:c)(s=9)B:m } 186AB }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [186A1(^95^8B)]
+  [186A2(^95^93)]
+  [186A3(^95^9C)]
+  [186A4(^95^A3)]
+  [186A5(^95^AB)]
+  [186A6(^95^B1)]
+  [186A7(^95^B8)]
+  [186A8(^95^BE)]
+  [186A9(^95^C5)]
+  [186AA(^95^CC)]
+  [186AB(^95^D2)]
+  [186AC(^95^D9)]
+  [186AD(^95^E0)]
+  [186AE(^95^E7)]
+  [186AF(^95^EE)]
+  [186B0(^95^F5)]
+  [186B1(^95^FC)]
+  [186B2(^95^103)]
+  [186B3(^95^109)]
+  [186B4(^95^110)]
+  [186B5(^95^117)]
+  [186B6(^95^11E)]
+  [186B7(^95^125)]
+  [186B8(^95^12C)]
+  [186B9(^95^133)]
+  [186BA(^95^13A)]
+  [186BB(^95^141)]
+  [186BC(^95^148)]
+  [186BD(^95^14F)]
+  [186BE(^95^156)]
+  [186BF(^95^15D)]
+  [186C0(^95^164)]
+  [186C1(^95^16B)]
+  [186C2(^95^172)]
+  [186C3(^95^179)]
+  [186C4(^95^17F)]
+  [186C5(^95^185)]
+  [186C6(^95^18C)]
+  [186C7(^95^193)]
+  [186EB(^95^19A)]
+  [186EC(^95^1A1)]}
+
+<(81=Microsoft)(82=8082014)(83=1417630466)(84=12)(86=)(87
+    ={"threadCol":{"visible":true},"attachmentCol":{"visible":true},"flaggedCo\
+l":{"visible":true},"subjectCol":{"visible":true},"unreadButtonColHeader":{"vi\
+sible":true},"senderCol":{"visible":true},"recipientCol":{"visible":false},"ju\
+nkStatusCol":{"visible":true},"dateCol":{"visible":true},"locationCol":{"visib\
+le":false}})(88=2c38015)(1A6=29)>
+{1:^9F {(k^A0:c)(s=9)} 
+  [1(^AC=1)(^AD=1)(^AE^81)(^88^82)(^A7^81)(^AF^83)(^B0=12)(^B1=1)(^B2=0)
+    (^B3=0)(^B4=)(^B5^87)(^B6=0)(^B7=0)(^A8^88)(^BA^1A5)(^A1=29)(^A6^1A5)]}
+
+@$${5D{@
+<(27E=83)>[186B5:^80(^C4=83)]
+@$$}5D}@
+
+@$${5E{@
+<(281=1f01b)(27F=293eaf)(280=2703023)(282=1f071)(283=666)>
+[-186B4:^80(^88=81)(^C0^10F)(^8B=0)(^82^AA)(^85^8A)(^81^110)(^83^111)
+    (^86^112)(^BD^112)(^89=1)(^87^281)(^9B^8F)(^8F^114)(^BE=0)(^9D^27F)
+    (^C3^280)(^9E^282)(^8C=666)]
+@$$}5E}@
+
+@$${5F{@
+@$$}5F}@
+
+@$${60{@
+<(284=84)>[186B4:^80(^C4=84)]
+@$$}60}@
+
+@$${61{@
+<(287=1f8e4)(285=2b2f20)(286=2830112)(288=1f93a)(289=683)>
+[-186B7:^80(^88=81)(^C0^124)(^8B=0)(^82^AA)(^85^8A)(^81^125)(^83^126)
+    (^86^127)(^BD^127)(^89=1)(^87^287)(^9B^8F)(^8F^129)(^BE=0)(^9D^285)
+    (^C3^286)(^9E^288)(^8C=683)]
+@$$}61}@
+
+@$${62{@
+@$$}62}@
+
+@$${63{@
+<(28A=85)>[186B7:^80(^C4=85)]
+@$$}63}@
+
+@$${64{@
+<(28D=1feb0)(28B=2d285a)(28C=2959450)(28E=1ff06)(28F=697)>
+[-186B6:^80(^88=81)(^C0^11D)(^8B=0)(^82^AA)(^85^8A)(^81^11E)(^83^11F)
+    (^86^120)(^BD^120)(^89=1)(^87^28D)(^9B^8F)(^8F^122)(^BE=0)(^9D^28B)
+    (^C3^28C)(^9E^28E)(^8C=697)]
+@$$}64}@
+
+@$${65{@
+@$$}65}@
+
+@$${66{@
+<(290=86)>[186B6:^80(^C4=86)]
+@$$}66}@
+
+@$${67{@
+<(293=20d2b)(291=2f2760)(292=3090272)(294=20d81)(295=6c7)>
+[-186AF:^80(^88=81)(^C0^ED)(^8B=0)(^82^AA)(^85^8A)(^81^EE)(^83^EF)
+    (^86^F0)(^BD^F0)(^89=1)(^87^293)(^9B^8F)(^8F^F2)(^BE=0)(^9D^291)
+    (^C3^292)(^9E^294)(^8C=6c7)]
+@$$}67}@
+
+@$${68{@
+@$$}68}@
+
+@$${69{@
+@$$}69}@
+
+@$${6A{@
+<(296=87)>[186AF:^80(^C4=87)]
+@$$}6A}@
+
+@$${6C{@
+< <(a=c)> // (f=iso-8859-1)
+  (C8=retainBy)(C9=daysToKeepHdrs)(CA=numHdrsToKeep)(CB=daysToKeepBodies)
+  (CC=keepUnreadOnly)(CD=useServerDefaults)(CE=cleanupBodies)
+  (CF=applyToFlaggedMessages)(D0=useServerRetention)>
+[1:^9F(^D0=1)]
+@$$}6C}@
+
+@$${6D{@
+@$$}6D}@

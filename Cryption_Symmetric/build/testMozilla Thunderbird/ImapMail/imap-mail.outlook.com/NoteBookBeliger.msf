@@ -1,0 +1,100 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=charSetOverride)(B9=charSet)(BA=highestRecordedUID)
+  (BB=ns:msg:db:row:scope:pending:all)(BC=ns:msg:db:table:kind:pending)
+  (BD=dateReceived)(BE=ProtoThreadFlags)(BF=folderName)
+  (C0=ns:msg:db:row:scope:ops:all)(C1=ns:msg:db:table:kind:ops)
+  (C2=storeToken)(C3=gloda-id)(C4=gloda-dirty)(C5=junkscore)(C6=keywords)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=bccList)
+  (8F=msgThreadId)(90=threadId)(91=threadFlags)(92=threadNewestMsgDate)
+  (93=children)(94=unreadChildren)(95=threadSubject)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=MRUTime)(B0=sortType)
+  (B1=sortOrder)(B2=viewFlags)(B3=viewType)(B4=sortColumns)
+  (B5=columnStates)(B6=highestModSeq)(B7=imapFlags)>
+<(91=186a1)(8D=5457d77e)(85=0)(80=1)>
+[1:m(^9C^91)(^90^91)(^92^8D)(^91=0)(^93=1)]
+<(9A=186a2)(96=5457da71)>[2:m(^9C^9A)(^90^9A)(^92^96)(^91=0)(^93=1)]
+<(A2=186a3)(A0=51f841df)>[3:m(^9C^A2)(^90^A2)(^92^A0)(^91=0)(^93=1)]
+
+<(A5=81)(89="notebooksbilliger.de" <service@notebooksbilliger.de>)(8A
+    ="Aripaka Raveendra Babu" <raveendraaripaka@hotmail.com>)(8B
+    ==?ISO-8859-1?Q?=5Bnotebooksbilliger=2Ede=5D_Vielen_Dank_f=FCr_Ih?=  =?ISO\
+-8859-1?Q?re_Bestellung!?=)(8C=E1XlNJG-000Ekg-3l@de-f-web1.cp-net.de)
+  (8E=ISO-8859-1)(A4=12df)(90=ffffffff)(A6=1335)(A7=74)>
+{186A1:^80 {(k^98:c)(s=9)1:m } [186A1(^88=81)(^8B=0)(^82^89)(^85^8A)(^81^8B)
+    (^83^8C)(^86^8D)(^BD^8D)(^89=1)(^96^8E)(^87^A4)(^9B^90)(^8F^91)
+    (^BE=0)(^9D=0)(^C2=0)(^9E^A6)(^8C=74)]}
+
+<(99=10000001)(92=notebooksbilliger.de <service@notebooksbilliger.de>)
+  (93=<raveendraaripaka@hotmail.com>)(94
+    ==?ISO-8859-1?Q?Auftragsbest=E4tigung_5694791?=)(95
+    =E1XlNVR-0002Cx-LV@de-f-backend.cp-net.de)(98=4dee1)>
+{186A2:^80 {(k^98:c)(s=9)2:m } [186A2(^88^99)(^8B=0)(^82^92)(^85^93)(^81^94)
+    (^83^95)(^86^96)(^BD^96)(^89=1)(^87^98)(^9B^90)(^8F^9A)(^BE=0)]}
+
+<(9C="notebooksbilliger.de" <team@notebooksbilliger.de>)(9D
+    ="Aripaka Raveendra BAbu" <raveendraaripaka@hotmail.com>)(9E
+    =Herzlich Willkommen im Onlineshop von notebooksbilliger.de!)(9F
+    =E1V4Iet-0003r3-6F@web2.cp-dev.de)(A9=de0)(A8=4917)(AA=e36)(AB=46)>
+{1:^80 {(k^97:c)(s=9)} 186A1 186A2 
+  [186A3(^88=81)(^8B=0)(^82^9C)(^85^9D)(^81^9E)(^83^9F)(^86^A0)(^BD^A0)
+    (^89=1)(^96^8E)(^87^A9)(^9B^90)(^8F^A2)(^BE=0)(^9D^A6)(^C2^A8)(^9E^AA)
+    (^8C=46)]}
+{186A3:^80 {(k^98:c)(s=9)3:m } 186A3 }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [186A1(^95^8B)]
+  [186A2(^95^94)]
+  [186A3(^95^9E)]}
+
+<(81=NoteBookBeliger)(82=8082014)(83=1417630467)(84=12)(86=)(87
+    ={"threadCol":{"visible":true},"attachmentCol":{"visible":true},"flaggedCo\
+l":{"visible":true},"subjectCol":{"visible":true},"unreadButtonColHeader":{"vi\
+sible":true},"senderCol":{"visible":true},"recipientCol":{"visible":false},"ju\
+nkStatusCol":{"visible":true},"dateCol":{"visible":true},"locationCol":{"visib\
+le":false}})(88=3800184)(A3=3)>
+{1:^9F {(k^A0:c)(s=9)} 
+  [1(^AC=1)(^AD=1)(^AE^81)(^88^82)(^A7^81)(^AF^83)(^B0=12)(^B1=1)(^B2=0)
+    (^B3=0)(^B4=)(^B5^87)(^B6=0)(^B7=0)(^A8^88)(^BA^A2)(^A1=3)(^A6^A2)]}
+
+@$${2{@
+<(AC=4c)>[186A1:^80(^C3=4c)]
+<(AD=4d)>[186A3:^80(^C3=4d)]
+@$$}2}@
+
+@$${4{@
+<(B1=10000081)(B0=4dee2)(AE=216b)(AF=8555)(B2=4df38)(B3=104f)>
+[-186A2:^80(^88^B1)(^8B=0)(^82^92)(^85^93)(^81^94)(^83^95)(^86^96)
+    (^BD^96)(^89=1)(^87^B0)(^9B^90)(^8F^9A)(^BE=0)(^9D^AE)(^C2^AF)(^9E^B2)
+    (^8C^B3)]
+@$$}4}@
+
+@$${5{@
+@$$}5}@
+
+@$${6{@
+@$$}6}@
+
+@$${7{@
+<(B4=4e)>[186A2:^80(^C3=4e)]
+@$$}7}@
+
+@$${9{@
+< <(a=c)> // (f=iso-8859-1)
+  (C7=retainBy)(C8=daysToKeepHdrs)(C9=numHdrsToKeep)(CA=daysToKeepBodies)
+  (CB=keepUnreadOnly)(CC=useServerDefaults)(CD=cleanupBodies)
+  (CE=applyToFlaggedMessages)(CF=useServerRetention)>
+[1:^9F(^CF=1)]
+@$$}9}@
+
+@$${A{@
+@$$}A}@
