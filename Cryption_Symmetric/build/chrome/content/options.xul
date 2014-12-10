@@ -28,7 +28,7 @@
                 <caption label = "Encryption"/>
                 <vbox >
                     <textbox id="Encrypt" placeholder="Enter text to be encrypted" width="625" height="625" multiline="true" focused="true" autocompletesearch="history"/>
-                    <button id="Encrypt-button" style="background-color: grey;" label="Encryption" width="20" oncommand="Cryption_Symmetric_Options.encrypt();"  />
+                    <button id="Encrypt-button" style="background-color: grey;" label="Encryption" image="chrome://Cryption_Symmetric/skin/Encrypt_toolbar.png" width="20" oncommand="Cryption_Symmetric_Options.encrypt();"  />
                 </vbox>
             </groupbox>
 
@@ -36,7 +36,7 @@
                 <caption label = "Decryption"/>
                 <vbox >
                     <textbox id="Decrypt" placeholder="Enter text to be decrypted" width="625" height="625" multiline="true" focused="true" autocompletesearch="history"/>
-                    <button id="Decrypt-button" label="Decryption" tooltiptext="Decrypt the above text" width="20" oncommand="Cryption_Symmetric_Options.decrypt();" />
+                    <button id="Decrypt-button" label="Decryption" image="chrome://Cryption_Symmetric/skin/Decrypt_toolbar.png" tooltiptext="Decrypt the above text" width="20" oncommand="Cryption_Symmetric_Options.decrypt();" />
                 </vbox>
             </groupbox>
         </hbox>

@@ -1,10 +1,8 @@
 // <!-- <mdb:mork:z v="1.4"/> -->
 < <(a=c)> // (f=iso-8859-1)
-  (B8=charSetOverride)(B9=charSet)(BA=highestRecordedUID)
-  (BB=ns:msg:db:row:scope:pending:all)(BC=ns:msg:db:table:kind:pending)
-  (BD=dateReceived)(BE=ProtoThreadFlags)(BF=folderName)
-  (C0=ns:msg:db:row:scope:ops:all)(C1=ns:msg:db:table:kind:ops)
-  (C2=storeToken)(C3=gloda-id)(C4=gloda-dirty)(C5=junkscore)(C6=keywords)
+  (B8=folderName)(B9=ns:msg:db:row:scope:ops:all)
+  (BA=ns:msg:db:table:kind:ops)(BB=storeToken)(BC=gloda-id)
+  (BD=gloda-dirty)(BE=junkscore)(BF=keywords)
   (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
   (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
   (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=bccList)
@@ -19,63 +17,59 @@
   (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
   (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
   (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
-  (AD=fixedBadRefThreading)(AE=onlineName)(AF=MRUTime)(B0=sortType)
-  (B1=sortOrder)(B2=viewFlags)(B3=viewType)(B4=sortColumns)
-  (B5=columnStates)(B6=highestModSeq)(B7=imapFlags)>
-<(91=186a1)(8D=545b5960)(85=0)(80=1)>
-[1:m(^9C^91)(^90^91)(^92^8D)(^91=0)(^93=1)]
-<(9A=186a2)(96=545b5de0)>[2:m(^9C^9A)(^90^9A)(^92^96)(^91=0)(^93=1)]
-<(A0=186a3)(9E=545b6547)>[3:m(^9C^A0)(^90^A0)(^92^9E)(^91=0)(^93=1)]
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=highestModSeq)
+  (B0=imapFlags)(B1=charSetOverride)(B2=charSet)(B3=highestRecordedUID)
+  (B4=ns:msg:db:row:scope:pending:all)(B5=ns:msg:db:table:kind:pending)
+  (B6=dateReceived)(B7=ProtoThreadFlags)>
+<(8E=186a1)(8A=545b5960)(83=0)(80=1)>
+[1:m(^9C^8E)(^90^8E)(^92^8A)(^91=0)(^93=1)]
+<(97=186a2)(93=545b5de0)>[2:m(^9C^97)(^90^97)(^92^93)(^91=0)(^93=1)]
+<(9D=186a3)(9B=545b6547)>[3:m(^9C^9D)(^90^9D)(^92^9B)(^91=0)(^93=1)]
 
-<(A3=81)(89=noreply@mediamarkt.com)(8A=raveendraaripaka@hotmail.com)
-  (8B=Ihre Bestellung Nr. 13957838 ist bei uns eingegangen)(8C
+<(A0=81)(86=noreply@mediamarkt.com)(87=raveendraaripaka@hotmail.com)
+  (88=Ihre Bestellung Nr. 13957838 ist bei uns eingegangen)(89
     =322769725.710131415272800170.JavaMail.wasown@ndm01.wcs.live.mesa.nexinto.\
-com)(8E=UTF-8)(A2=bdc)(90=ffffffff)(A4=c32)(A5=43)>
-{186A1:^80 {(k^98:c)(s=9)1:m } [186A1(^88=81)(^8B=0)(^82^89)(^85^8A)(^81^8B)
-    (^83^8C)(^86^8D)(^BD^8D)(^89=1)(^96^8E)(^87^A2)(^9B^90)(^8F^91)
-    (^BE=0)(^9D=0)(^C2=0)(^9E^A4)(^8C=43)]}
+com)(8B=UTF-8)(9F=bdc)(8D=ffffffff)(A1=c32)(A2=43)>
+{186A1:^80 {(k^98:c)(s=9)1:m } [186A1(^88=81)(^8B=0)(^82^86)(^85^87)(^81^88)
+    (^83^89)(^86^8A)(^B6^8A)(^89=1)(^96^8B)(^87^9F)(^9B^8D)(^8F^8E)
+    (^B7=0)(^9D=0)(^BB=0)(^9E^A1)(^8C=43)]}
 
-<(A8=10000081)(92=<no_reply@mediamarkt.de>)(93
-    =<raveendraaripaka@hotmail.com>)(94
-    =Media Markt, Ihre Bestellung ist eingegangen)(95
+<(A5=10000081)(8F=<no_reply@mediamarkt.de>)(90
+    =<raveendraaripaka@hotmail.com>)(91
+    =Media Markt, Ihre Bestellung ist eingegangen)(92
     =776407905.171012.1415273939721.JavaMail.ggmmdearoma@degtlun2429)
-  (A7=8622)(A6=3122)(A9=8678)(AA=207)>
-{186A2:^80 {(k^98:c)(s=9)2:m } [186A2(^88^A8)(^8B=0)(^82^92)(^85^93)(^81^94)
-    (^83^95)(^86^96)(^BD^96)(^89=1)(^87^A7)(^9B^90)(^8F^9A)(^BE=0)(^9D^A4)
-    (^C2^A6)(^9E^A9)(^8C^AA)]}
+  (A4=8622)(A3=3122)(A6=8678)(A7=207)>
+{186A2:^80 {(k^98:c)(s=9)2:m } [186A2(^88^A5)(^8B=0)(^82^8F)(^85^90)(^81^91)
+    (^83^92)(^86^93)(^B6^93)(^89=1)(^87^A4)(^9B^8D)(^8F^97)(^B7=0)(^9D^A1)
+    (^BB^A3)(^9E^A6)(^8C^A7)]}
 
-<(99=10000001)(9C
+<(96=10000001)(99
     ==?utf-8?Q?Media_Markt=2C_Ihre_Bestellung_=E2=80=93_Abholbest=C3=A4tigung?\
-=)(9D=1098463642.178399.1415275835304.JavaMail.ggmmdearoma@degtlun2429)
-  (9F=19d4a)>
+=)(9A=1098463642.178399.1415275835304.JavaMail.ggmmdearoma@degtlun2429)
+  (9C=19d4a)>
 {1:^80 {(k^97:c)(s=9)} 186A1 186A2 
-  [186A3(^88^99)(^8B=0)(^82^92)(^85^93)(^81^9C)(^83^9D)(^86^9E)(^BD^9E)
-    (^89=1)(^87^9F)(^9B^90)(^8F^A0)(^BE=0)]}
+  [186A3(^88^96)(^8B=0)(^82^8F)(^85^90)(^81^99)(^83^9A)(^86^9B)(^B6^9B)
+    (^89=1)(^87^9C)(^9B^8D)(^8F^9D)(^B7=0)]}
 {186A3:^80 {(k^98:c)(s=9)3:m } 186A3 }
-{FFFFFFFD:^9A {(k^99:c)(s=9)} [186A1(^95^8B)]
-  [186A2(^95^94)]
-  [186A3(^95^9C)]}
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [186A1(^95^88)]
+  [186A2(^95^91)]
+  [186A3(^95^99)]}
 
-<(81=MediaMarkt)(82=8082014)(83=1417630466)(84=12)(86=)(87
-    ={"threadCol":{"visible":true},"attachmentCol":{"visible":true},"flaggedCo\
-l":{"visible":true},"subjectCol":{"visible":true},"unreadButtonColHeader":{"vi\
-sible":true},"senderCol":{"visible":true},"recipientCol":{"visible":false},"ju\
-nkStatusCol":{"visible":true},"dateCol":{"visible":true},"locationCol":{"visib\
-le":false}})(88=383bbe0)(A1=3)>
+<(81=MediaMarkt)(82=8082014)(84=383bbe0)(9E=3)>
 {1:^9F {(k^A0:c)(s=9)} 
-  [1(^AC=1)(^AD=1)(^AE^81)(^88^82)(^A7^81)(^AF^83)(^B0=12)(^B1=1)(^B2=0)
-    (^B3=0)(^B4=)(^B5^87)(^B6=0)(^B7=0)(^A8^88)(^BA^A0)(^A1=3)(^A6^A0)]}
+  [1(^AC=1)(^AD=1)(^AE^81)(^88^82)(^A7^81)(^AF=0)(^B0=0)(^A8^84)(^B3^9D)
+    (^A1=3)(^A6^9D)]}
 
 @$${2{@
-<(AB=33)>[186A1:^80(^C3=33)]
-<(AC=34)>[186A2:^80(^C3=34)]
+<(A8=8f)>[186A1:^80(^BC=8f)]
+<(A9=90)>[186A2:^80(^BC=90)]
 @$$}2}@
 
 @$${3{@
-<(AF=19d4b)(AD=92aa)(AE=37546)(B0=19da1)(B1=5c4)>
-[-186A3:^80(^88^A8)(^8B=0)(^82^92)(^85^93)(^81^9C)(^83^9D)(^86^9E)
-    (^BD^9E)(^89=1)(^87^AF)(^9B^90)(^8F^A0)(^BE=0)(^9D^AD)(^C2^AE)(^9E^B0)
-    (^8C^B1)]
+<(AC=19d4b)(AA=92aa)(AB=37546)(AD=19da1)(AE=5c4)>
+[-186A3:^80(^88^A5)(^8B=0)(^82^8F)(^85^90)(^81^99)(^83^9A)(^86^9B)
+    (^B6^9B)(^89=1)(^87^AC)(^9B^8D)(^8F^9D)(^B7=0)(^9D^AA)(^BB^AB)(^9E^AD)
+    (^8C^AE)]
 @$$}3}@
 
 @$${4{@
@@ -85,15 +79,15 @@ le":false}})(88=383bbe0)(A1=3)>
 @$$}5}@
 
 @$${6{@
-<(B2=35)>[186A3:^80(^C3=35)]
+<(AF=91)>[186A3:^80(^BC=91)]
 @$$}6}@
 
 @$${8{@
 < <(a=c)> // (f=iso-8859-1)
-  (C7=retainBy)(C8=daysToKeepHdrs)(C9=numHdrsToKeep)(CA=daysToKeepBodies)
-  (CB=keepUnreadOnly)(CC=useServerDefaults)(CD=cleanupBodies)
-  (CE=applyToFlaggedMessages)(CF=useServerRetention)>
-[1:^9F(^CF=1)]
+  (C0=retainBy)(C1=daysToKeepHdrs)(C2=numHdrsToKeep)(C3=daysToKeepBodies)
+  (C4=keepUnreadOnly)(C5=useServerDefaults)(C6=cleanupBodies)
+  (C7=applyToFlaggedMessages)(C8=useServerRetention)>
+[1:^9F(^C8=1)]
 @$$}8}@
 
 @$${9{@

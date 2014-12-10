@@ -1,0 +1,325 @@
+From - Wed Dec 10 17:22:16 2014
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+x-store-info: J++/JTCzmObr++wNraA4Pa4f5Xd6uensydyekesGC2M=
+Authentication-Results: hotmail.com; spf=none (sender IP is 192.254.114.176; identity alignment result is pass and alignment mode is relaxed) smtp.mailfrom=bounces+848413-f7ac-raveendraaripaka=hotmail.com@sgmail.github.com; dkim=pass (identity alignment result is pass and alignment mode is relaxed) header.d=github.com; x-hmca=pass header.id=support@github.com
+X-SID-PRA: support@github.com
+X-AUTH-Result: PASS
+X-SID-Result: PASS
+X-Message-Status: n:n
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTE7YT0xO0Q9MTtHRD0xO1NDTD0w
+X-Message-Info: NhFq/7gR1vTbXA/TdFihZKZH/qRnItd0FeVUbHfvAmSEc9u84+M/1Z33GcPXqmr0TuPOuo4NMAbRnJFQuBnK67UxDYLP1ehxWxknlNyv28O7rGgXDqA5gPdeBUyD1h7doNYVFO2TOb9buFaGQrlVebzgs5NEXyQdPz7WnMCKJtkls7H3ZmWjP1pfR4HlgAHtjWOiFSNjjwrmmGMW2oMOKLi82TkCBvqo
+Received: from o1.sgmail.github.com ([192.254.114.176]) by COL004-MC1F19.hotmail.com over TLS secured channel with Microsoft SMTPSVC(7.5.7601.22751);
+	 Thu, 4 Dec 2014 05:58:31 -0800
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=github.com; 
+	h=from:to:subject:mime-version:content-type:content-transfer-encoding; 
+	s=smtpapi; bh=XhVaYjFSKeK5XbHGFZ0+sIzZ5vU=; b=c33vFuV3KDwaftZ9sO
+	H7Jnbck3dIPoOzAnQApzDRXZ7pt3FmcWOc65LYLVUq9TMirw21GYwjx0ZjQxBsUJ
+	gA/8osjQjCAyxJpUmM3U35uwfGBoQPnAUyEQvKoKYgAL8NiGZbzKYy7Cwwaq0OKq
+	XYj30bjyuM4CFc9vlKvuCIPfk=
+Received: by filter-190.sjc1.sendgrid.net with SMTP id filter-190.14450.548068826
+        2014-12-04 13:58:28.350082422 +0000 UTC
+Received: from github-smtp2b-ext-cp1-prd.iad.github.net (github-smtp2b-ext-cp1-prd.iad.github.net [192.30.253.17])
+	by ismtpd-041 (SG) with ESMTP id 14a1598443a.c61.38c418
+	for <raveendraaripaka@hotmail.com>; Thu, 04 Dec 2014 13:58:28 +0000 (UTC)
+Date: Thu, 4 Dec 2014 05:58:28 -0800
+From: GitHub <support@github.com>
+To: raveendraaripaka <raveendraaripaka@hotmail.com>
+Message-ID: <548068849a55_1ef83fa57fe472bc59089@github-highworker2-cp1-prd.iad.github.net.mail>
+Subject: raveendraaripaka + GitHub = <3
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="--==_mimepart_54806884897b_1ef83fa57fe472bc589cf"; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: All
+tracking: true
+categories: welcome,welcome-iteration-2
+X-SG-EID: 3aRH5r6Q0EOLnNEZqhJFn9ULa8MQ4P1AWn/YQAtM+9qZ+SBJZEdV+rp5HJOqJK5QwJ/OQejP3yCcqo
+ b0HbZTFrpCIC6CdnRBMHSTwkydEPWUWicaV/JyAT08Qv62CkoPe218Owh0cXOqkxLNQiw0+l64ajDX
+ RaNH9rvlnnaFw98=
+X-SG-ID: vsx7nv/2zpleokjqD6CJiTie/0iJ+JyNhNjpGj4xCT0xEp/gpytKyMiBdindUART
+Return-Path: bounces+848413-f7ac-raveendraaripaka=hotmail.com@sgmail.github.com
+X-OriginalArrivalTime: 04 Dec 2014 13:58:31.0346 (UTC) FILETIME=[630EA920:01D00FCA]
+
+----==_mimepart_54806884897b_1ef83fa57fe472bc589cf
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Welcome to GitHub!
+
+We're pretty certain this is the start of something really special, so we
+wanted to take a moment to personally welcome you to GitHub. We like to thi=
+nk
+of GitHub as the best way to build and ship software, and it's great to have
+you on board!
+
+To make your life easier, we thought it might be helpful to point you to so=
+me
+awesome ways to use GitHub.
+
+
+    GitHub Flow in the Browser
+    https://github.com/blog/1557-github-flow-in-the-browser
+
+    Want to learn how to contribute to GitHub without learning Git? Learn h=
+ow
+    to branch, edit, and submit your first pull request all in the browser.
+
+
+    Explore what is Trending on GitHub
+    https://github.com/blog/1585-explore-what-is-trending-on-github
+
+    From open government data to web frameworks, our trending page is a gre=
+at
+    way to discover different ways people are using GitHub.
+
+
+    Help & Support
+    https://help.github.com
+
+    Feel stuck? It happens to the best of us. Head on over to
+    https://help.github.com or https://github.com/contact to get advice
+    and guidance from real humans. We're here to help.
+
+----
+
+You will also have a verification email in your inbox - please follow the l=
+ink inside
+it so we can confirm your email address is really yours.
+
+Thanks so much for your time =E2=80=94  we're looking forward to seeing wha=
+t you build
+with GitHub!
+
+----==_mimepart_54806884897b_1ef83fa57fe472bc589cf
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang=3D"en">
+<head>
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+  <title>Welcome to GitHub!</title>
+  <style>
+  div.content a{
+    color: #4183C4 !important;
+    text-decoration: none;
+  }
+  div.content a:hover {
+    color: #4183C4 !important;
+    text-decoration: underline !important;
+  }
+
+
+  @media only screen and (max-device-width: 480px) {
+    h1[class=3D"heading"] {
+      font-size: 30px !important;
+    }
+    p[class=3D"subtext"] {
+      font-size: 14px !important;
+    }
+
+    div[class=3D"content"] {
+      width: 260px !important;
+    }
+    div[class=3D"heading-content"] {
+      width: 300px !important;
+    }
+    img[class=3D"video-teaser"] {
+      width: 260px !important;
+      height: 76px !important;
+    }
+  }
+  </style>
+</head>
+<body bgcolor=3D"#fafafa" topmargin=3D"0" leftmargin=3D"0" marginheight=3D"=
+0" marginwidth=3D"0" style=3D"-webkit-font-smoothing: antialiased;width:100=
+% !important;background:#fafafa;-webkit-text-size-adjust:none;">
+
+  <div style=3D"padding: 10px;">
+    <div class=3D"heading-content" style=3D"padding-top: 20px; width: 550px=
+; margin: 0 auto;">
+      <h1 class=3D"heading" style=3D"margin: 0; font-family:'Helvetica Neue=
+',Helvetica,Arial,sans-serif; font-size: 40px; letter-spacing: -1px; color:=
+ #333; font-weight:normal;">
+        Welcome to GitHub
+      </h1>
+      <p class=3D"subtext" style=3D"margin: 0 0 30px 0; font-family:'Helvet=
+ica Neue',Helvetica,Arial,sans-serif; font-size: 17px; font-weight: 300; co=
+lor: #555;">
+        You've taken your first step into a larger world, <strong style=3D"=
+color:#333">@raveendraaripaka</strong>.
+      </p>
+    </div>
+
+    <div class=3D"content" style=3D"margin: 20px auto !important; width: 51=
+0px; padding: 20px 20px 20px 20px !important; border: 1px solid #ddd !impor=
+tant; border-radius: 3px !important; box-shadow: 0 1px 3px rgba(0,0,0,0.05)=
+ !important; background: #ffffff !important;">
+
+      <p style=3D"margin: 5px 0 15px 0; font-family:'Helvetica Neue',Helvet=
+ica,Arial,sans-serif; font-size: 14px; font-weight: normal; color: #333; li=
+ne-height: 20px;">
+        We're pretty certain this is the start of something really special,=
+ so we wanted to take a moment to personally welcome you to GitHub. We like=
+ to think of GitHub as the <strong>best way to build and ship software</str=
+ong>, and it's great to have you on board!
+      </p>
+
+      <p style=3D"margin: 15px 0 15px 0; font-family:'Helvetica Neue',Helve=
+tica,Arial,sans-serif; font-size: 14px; font-weight: normal; color: #333; l=
+ine-height: 20px;">
+        To make your life easier, we thought it might be helpful to point y=
+ou to some awesome ways to use GitHub.
+      </p>
+
+      <div class=3D"rule" style=3D"margin: 20px 0;border-top: 1px solid #dd=
+d;"></div>
+
+      <h3 style=3D"color:#000; font-size:18px; line-height:24px; font-famil=
+y:'Helvetica Neue',Helvetica,Arial,sans-serif; margin-top:20px; margin-bott=
+om:0; padding-top:0; padding-bottom:0; font-weight:bold;">
+        <a href=3D"http://sgmail.githubmail.com/wf/click?upn=3DlYxq-2FYU7yo=
+crdKNILYalBi3VwnzY7zTO6Pte-2BaGwxir0Kd9H9VQkXOqT-2BGr-2F-2BLuLXjutmfqrz6vbd=
+hpNm4Wuaw-3D-3D_exqa5xzw8GdtdWGqB89D-2Bujcp3BR5CGFE5ZBIP6RzXV-2BJBI-2F9uJBl=
+H1faSoplZSAzNjVyt-2FN5Y6aPP7gDiy0PPdu34IOQdM8Zc3JqNn2LeEEb1hSGcLr1-2BTqhsAM=
+SLEENwAis9fGLlNKybSF6VltaCp7uR-2FNIrWW80RyJ7v1Rt-2BCc1qGFd1Hv5uiI4pfCPlDa43=
+p35fzuXyCNq5EytuS5fIEqdKyqXP61OkZfNdWrb0Zb8hqcIalOwLyF3nbklSZZm7Ra92JSB537a=
+lWhfFQaQ-3D-3D" style=3D"color: #4183C4 !important; text-decoration:none;">=
+GitHub Flow in the Browser</a>
+      </h3>
+      <p style=3D"margin: 5px 0 15px 0; font-family:'Helvetica Neue',Helvet=
+ica,Arial,sans-serif; font-size: 14px; font-weight: normal; color: #333; li=
+ne-height: 20px;">
+        Want to learn how to contribute to GitHub without learning Git? Lea=
+rn how to branch, edit, and submit your first pull request all in the brows=
+er.
+      </p>
+
+      <h3 style=3D"color:#000; font-size:18px; line-height:24px; font-famil=
+y:'Helvetica Neue',Helvetica,Arial,sans-serif; margin-top:20px; margin-bott=
+om:0; padding-top:0; padding-bottom:0; font-weight:bold;">
+        <a href=3D"http://sgmail.githubmail.com/wf/click?upn=3DlYxq-2FYU7yo=
+crdKNILYalBi3VwnzY7zTO6Pte-2BaGwxiqDPG24uAHGi0FSOxLoUFi19DRKFImPmSQdsFf8uNa=
+CvqALiF5FAGnFWMdpF063e6M-3D_exqa5xzw8GdtdWGqB89D-2Bujcp3BR5CGFE5ZBIP6RzXV-2=
+BJBI-2F9uJBlH1faSoplZSAzNjVyt-2FN5Y6aPP7gDiy0PKlDahb5svINr2WGbJ0AeOEJxIanMz=
+3M1aIIlptBN3REpv4c5hYpP-2BOVFa3n9ZZsLZXQ2qp7qFhHi6QWGoV48hFJHhljJD1IDU75CMm=
+WuS5iyAUAUukvXjqauw5074UATc7eqDr7uyJ9rUIdtZbLbyQMKbiYJ4519SU9leFYJgqxYVXLnE=
+7ZaAkaC8yZrsbnrA-3D-3D" style=3D"color: #4183C4 !important; text-decoration=
+:none;">Explore what is Trending on GitHub</a>
+      </h3>
+      <p style=3D"margin: 5px 0 15px 0; font-family:'Helvetica Neue',Helvet=
+ica,Arial,sans-serif; font-size: 14px; font-weight: normal; color: #333; li=
+ne-height: 20px;">
+        From open government data to web frameworks, our trending page is a=
+ great way to discover different ways people are using GitHub.
+      </p>
+
+      <h3 style=3D"color:#000; font-size:18px; line-height:24px; font-famil=
+y:'Helvetica Neue',Helvetica,Arial,sans-serif; margin-top:20px; margin-bott=
+om:0; padding-top:0; padding-bottom:0; font-weight:bold;">
+        <a href=3D"http://sgmail.githubmail.com/wf/click?upn=3DH-2FQ3yMxnv4=
+jw-2BxNnSBX800Ob4haBdxdnbHhw-2FfIS1q8-3D_exqa5xzw8GdtdWGqB89D-2Bujcp3BR5CGF=
+E5ZBIP6RzXV-2BJBI-2F9uJBlH1faSoplZSAzNjVyt-2FN5Y6aPP7gDiy0PD3xMkC-2BD808RKF=
+juoBsn4XwP-2FOpJ3MLgi8NX47CSYpcmQCI-2F1zidngq18-2B-2BiWFehfv8AxjnoTixvE40Qu=
+g17UUPRa0RKUY6fQgvruwzjp9l-2BIBeZC57IBb-2FvfCU4pEPSAiYd2zqdbrMQ1-2B-2FDVvH3=
+br-2FC7hXL970fWZUa8-2BL-2F8MYgc99RitCbsvRQkTQ-2BeNS4Q-3D-3D" style=3D"color=
+: #4183C4 !important; text-decoration:none;">Help &amp; Support</a>
+      </h3>
+      <p style=3D"margin: 5px 0 15px 0; font-family:'Helvetica Neue',Helvet=
+ica,Arial,sans-serif; font-size: 14px; font-weight: normal; color: #333; li=
+ne-height: 20px;">
+        Feel stuck? It happens to the best of us. Head on over to <a href=
+=3D"http://sgmail.githubmail.com/wf/click?upn=3DH-2FQ3yMxnv4jw-2BxNnSBX800O=
+b4haBdxdnbHhw-2FfIS1q8-3D_exqa5xzw8GdtdWGqB89D-2Bujcp3BR5CGFE5ZBIP6RzXV-2BJ=
+BI-2F9uJBlH1faSoplZSAzNjVyt-2FN5Y6aPP7gDiy0PPxoKJk2oHxmZcuyQ3TJKcredjmbf0Qo=
+hVfHBSN5LTiuWK6cQ5XywhIVTsyd6ZQ0PFXqR40DJ-2B4mAjYWAQ7OIlf651c2u29HwMOj-2BgB=
+4aqR8VW7qDXd-2FxR4unLTaKdQxubeAC4h1l98og515LfsGVdMws9DTvJgCgklNSic46JYs8oIj=
+QnvXHW9i12LEEd3NDQ-3D-3D" style=3D"color: #4183C4 !important;">https://help=
+.github.com</a> or <a href=3D"http://sgmail.githubmail.com/wf/click?upn=3Dl=
+Yxq-2FYU7yocrdKNILYalBns0-2BAtuVmzGa7SLHyHvAeqldWkPIsTFf4FBwmzIISp1_exqa5xz=
+w8GdtdWGqB89D-2Bujcp3BR5CGFE5ZBIP6RzXV-2BJBI-2F9uJBlH1faSoplZSAzNjVyt-2FN5Y=
+6aPP7gDiy0PLsgw-2F8UbwYkpuD5lLEccQHRa02Y3rEQ-2FqujGIclysnngHB-2Fe3tM2hMxwKC=
+GsvkP9eheeNAc2dusleW5Ha2Hnj4PQHcRlBeP5UNH6dgYFQ79VzHgZfgdCwvKmlMHtxH8YCm5D2=
+mPKnTNRbVimQGlcMSaRe341V-2B-2F9VHOhDXUu99-2F4HdT5qScfo8PtZQ4XBowVQ-3D-3D" s=
+tyle=3D"color: #4183C4 !important;">get advice and guidance from real human=
+s</a>. We're here to help.
+      </p>
+
+      <div class=3D"rule" style=3D"margin: 20px 0;border-top: 1px solid #dd=
+d;"></div>
+
+      <p style=3D"margin: 15px 0 5px 0; font-family:'Helvetica Neue',Helvet=
+ica,Arial,sans-serif; font-size: 14px; font-weight: normal; color: #333; li=
+ne-height: 20px;">
+        Thanks so much for your time =E2=80=94  we're looking forward to se=
+eing what you build with GitHub!<br><br>
+      </p>
+
+    </div>
+
+    <div class=3D"mark" style=3D"margin: 20px 0; text-align: center;">
+      <img src=3D"https://assets-cdn.github.com/images/email/welcome-email/=
+footer-mark.png" width=3D"40" height=3D"40">
+    </div>
+  </div>
+
+
+<img src=3D"http://sgmail.githubmail.com/wf/open?upn=3Dexqa5xzw8GdtdWGqB89D=
+-2Bujcp3BR5CGFE5ZBIP6RzXV-2BJBI-2F9uJBlH1faSoplZSAzNjVyt-2FN5Y6aPP7gDiy0PJ3=
+21fLUSW5RGN2Dp3JPfzyc0Kkcg2s8piJEP6K8nqMbgKVs8C-2BCK0y73TPkt55BIT2KxPBQccaV=
+FW7miWJlvYmMYItF-2B3FjAAXsUfoYgcSLIrZ4Owg5DSwbHh3om0UL6WLmjaDb6iy4Hp8O5ieDD=
+sBKTC2EcokkSKiQo8KSKIrThkx3bq6aG1-2FrR2zm2Bwpyub3XB9QKHvvt9888YtRx8c-3D" al=
+t=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important=
+;width:1px !important;border-width:0 !important;margin-top:0 !important;mar=
+gin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;=
+padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !impor=
+tant;padding-left:0 !important;"/>
+</body>
+</html>
+
+
+----==_mimepart_54806884897b_1ef83fa57fe472bc589cf--
+From - Wed Dec 10 17:22:16 2014
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+x-store-info: J++/JTCzmObr++wNraA4Pa4f5Xd6uensWQjutc4PB1DY1Kei8Vjjrd+xkUKTMQ7/gAq61+PqJAchHMVGXYS3w7QbH6UZyNFYJI8BAXQ0Z1R991RIo9r8rXa6SKTri0ijsIG/8QGFVqA=
+Authentication-Results: hotmail.com; spf=pass (sender IP is 192.30.252.193; identity alignment result is pass and alignment mode is relaxed) smtp.mailfrom=noreply@github.com; dkim=pass (testing mode; identity alignment result is pass and alignment mode is relaxed) header.d=github.com; x-hmca=pass header.id=noreply@github.com
+X-SID-PRA: noreply@github.com
+X-AUTH-Result: PASS
+X-SID-Result: PASS
+X-Message-Status: n:n
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTE7YT0xO0Q9MTtHRD0xO1NDTD0x
+X-Message-Info: NhFq/7gR1vQzD0OXG/faHQcTQ1bdTaUlZv+gCe1dmZ2Kf/LXTF4llORNTsj048ddYgs/g72lToYuoEsurl7Ek/ts+F9I6L2p+dFJuLFVXH4VliKRxc8V0YrvKMjon4nwcXROjT8Ak6zmyYPeA6cB6nT8YNmmZI6+JKm3w0tqEaLIuZABGvhdOzgO2hh/Wi2uaSq8bgw/N/GTRXT7MH6RYbjHsCw6J9sg
+Received: from github-smtp2b-ext-cp1-prd.iad.github.net ([192.30.252.193]) by BAY004-MC4F27.hotmail.com over TLS secured channel with Microsoft SMTPSVC(7.5.7601.22751);
+	 Thu, 4 Dec 2014 06:28:22 -0800
+Date: Thu, 4 Dec 2014 06:28:21 -0800
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=github.com;
+	s=pf2014; t=1417703301;
+	bh=GC1NpgLFW8ywlquY/JQk8ThI00iUM+Mq4+VEgTsbqPo=;
+	h=From:To:Subject:From;
+	b=wt2kPAKBumANTDM/r1obgEKpzxiwTVhr8cdvQZseELSRuB531PFJWV24YRBya4rxd
+	 +nd8PjCKE4LrL2C4FyS+JLW1jFzrdPByxNR5fjWlVhsy8qWbEsFNlOz/7xO0Je+bwl
+	 DmADVYAnX39CBBFRcV/NQsR2swhLvm/Wa+G2+fxE=
+From: GitHub <noreply@github.com>
+To: Raveendra Babu Aripaka <raveendraaripaka@hotmail.com>
+Message-ID: <54806f8584628_11473fd687de92a04654@github-api2-cp1-prd.iad.github.net.mail>
+Subject: [GitHub] A new public key was added to your account
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: All
+Return-Path: noreply@github.com
+X-OriginalArrivalTime: 04 Dec 2014 14:28:22.0783 (UTC) FILETIME=[8ED640F0:01D00FCE]
+
+The following SSH key was added to your account:
+
+GitHub for Windows - Raveendra
+d0:a4:3f:93:a5:92:f4:26:74:d2:70:f4:c2:08:97:70
+
+If you believe this key was added in error, you can remove the key and disable
+access at the following location:
+
+https://github.com/settings/ssh

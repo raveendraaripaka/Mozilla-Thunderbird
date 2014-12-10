@@ -24,7 +24,6 @@ var context_menu  = {
     },
     
     onMenuItemCommand: function() {
-        alert(this.getString("Continue_Confirm"));
         window.open("chrome://{appname}/content/options.xul", "", "chrome,titlebar,toolbar,centerscreen,modal");
     },
 

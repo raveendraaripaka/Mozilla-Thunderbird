@@ -6,7 +6,7 @@
 
     <script src="cryption_msgcompseWindow.js"/>
 
-    <editor type="content-primary" id="content-frame" src="about:blank" name="browser.message.body" flex="1" ondblclick="EditorDblClick(event);" context="msgComposeContext" editortype="textmail"/>
+    
 
     <toolbar id="composeToolbar2" class="toolbar-primary chromeclass-toolbar" toolbarname="Composition Toolbar" accesskey="o" fullscreentoolbar="true" mode="full" defaultset="button-send,separator,button-address,spellingButton,button-attach,Cryption-1,button-security,button-save" customizable="true" context="toolbar-context-menu">
         <toolbarbutton class="toolbarbutton-1" id="button-send" label="Send" tooltiptext="Send this message now" now_label="Send" now_tooltiptext="Send this message now" later_label="Send Later" later_tooltiptext="Send this message later" oncommand="goDoCommand('cmd_sendButton')" removable="true" disabled="true" command="cmd_sendButton"/>
@@ -35,12 +35,12 @@
             </menupopup>
         </toolbarbutton>
 <!--        mytoolbar button for Encryption-->
-        <toolbarbutton class="toolbarbutton-1" type="menu-button" id="Cryption-1" label="Encryption" tooltiptext="Encryption bar" removable="true">
-        <menupopup id="encryptionbar_options">
+        <toolbarbutton class="toolbarbutton-1" type="menu-button" id="Cryption-1" label="Encryption" tooltiptext="Enable/Disable Encryption Bar" removable="true" image="chrome://{appname}/skin/Encrypt_toolbar.png">
+            <menupopup id="encryptionbar_options">
                 <menuitem id="encryptionbar_options_enable"  label="Enable"  oncommand="message_body.showEncryptionBar_enable();" type="radio" />
                 <menuitem id="encryptionbar_options_disable" label="Disable" oncommand="message_body.showEncryptionBar_disable();" type="radio" />
             </menupopup>
-         </toolbarbutton>
+        </toolbarbutton>
 <!--         Ends Here-->
         <toolbarbutton class="toolbarbutton-1" type="menu-button" id="button-save" label="Save" tooltiptext="Save this message" oncommand="goDoCommand('cmd_saveDefault')" removable="true" command="cmd_saveDefault">
             <menupopup id="button-savePopup" onpopupshowing="InitFileSaveAsMenu();">
@@ -50,10 +50,11 @@
                 <menuitem id="savePopup_saveAsTemplate" label="Template" accesskey="T" command="cmd_saveAsTemplate" type="radio" name="radiogroup_SaveAs"/>
             </menupopup>
         </toolbarbutton>
-    </toolbar>   
+    </toolbar>
         
  
     <vbox id="appcontent">
+        <editor type="content-primary" id="content-frame" src="about:blank" name="browser.message.body" flex="1" ondblclick="EditorDblClick(event);" context="msgComposeContext" editortype="textmail"/>
         <hbox id="encryptionbar" hidden= "false">
             <groupbox flex="1" align="left" >
                 <hbox>
@@ -70,9 +71,9 @@
 
             <groupbox  flex="1" align="right" >
                 <hbox >
-                    <button id="encrypt_data" label="Encrypt Mail Body" oncommand="message_body.encrypt_mail();"/>
-                    <button id="Rever Changes" label="Revert Encryption" oncommand="message_body.Revert_Changes();"/>
-                    <button id="button_options" label="Quick Tool" oncommand="message_body.onMenuItemCommand();"/>                    
+                    <button id="encrypt_data" label="  Encrypt Mail" image="chrome://{appname}/skin/Encrypt.png"  oncommand="message_body.encrypt_mail();" tooltiptext="Encrypt the Mail above"/>
+                    <button id="Rever Changes" label="  Revert Encryption" image="chrome://{appname}/skin/Revert.png"  oncommand="message_body.Revert_Changes();" tooltiptext="Revert Encrypted Mail"/>
+                    <button id="button_options" label="  Toolkit" image="chrome://{appname}/skin/Toolkit.png"  oncommand="message_body.onMenuItemCommand();" tooltiptext="Quick Toolkit for Encryption/Decryption"/>
                 </hbox>
             </groupbox>
         </hbox>

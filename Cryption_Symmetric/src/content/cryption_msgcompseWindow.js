@@ -49,7 +49,8 @@ var message_body  = {
         var editor = document.getElementById("content-frame");
         var editorDocument = editor.contentDocument;
         var messageBody = editorDocument.getElementsByTagName("body")[0];
-        var selection = messageBody.textContent;
+        var selection = messageBody.innerHTML;
+        selection = selection.split("<br>").join("\n");
 
        
         var pass = document.getElementById("password").value;
@@ -61,13 +62,16 @@ var message_body  = {
             }
             else{
                 try{
-                    decrypted = message_body.decryptText(selection.toString(), pass);
+                    
+                    decrypted = message_body.decryptText(selection, pass);
+                    decrypted = decrypted.split("\n").join("<br>");
                 }
                 catch(E){
-                    decrypted = message_body.seekText(selection.toString());
+                    decrypted = message_body.seekText(selection);
                     decrypted = message_body.decryptText(decrypted, pass.value);
+                    decrypted = decrypted.split("\n").join("<br>");
                 }
-                messageBody.textContent= decrypted;
+                messageBody.innerHTML= decrypted;
             }
         }
         catch(E) {
@@ -79,8 +83,10 @@ var message_body  = {
 
         var editor = document.getElementById("content-frame");
         var editorDocument = editor.contentDocument;
+//        editorDocument.designMode = 'on';
         var messageBody = editorDocument.getElementsByTagName("body")[0];
-        var selection = messageBody.textContent;
+        var selection = messageBody.innerHTML;
+        selection = selection.split("<br>").join("\n")
 
         if(selection  == null)
         {
@@ -96,13 +102,14 @@ var message_body  = {
                 if(hint=="")
                 {
                     hint="not provided";
-//                    .toString()
                     var encrypted = message_body.encryptText(selection, pass, hint);
-                    messageBody.textContent = encrypted;
+                    encrypted = encrypted.split("\n").join("<br>");
+                    messageBody.innerHTML = encrypted;
                 }
                 else{
                     var encrypted_hint = message_body.encryptText(selection, pass, hint);
-                    messageBody.textContent = encrypted_hint;
+                    encrypted_hint = encrypted_hint.split("\n").join("<br>");
+                    messageBody.innerHTML = encrypted_hint;
                 }
             }
         }
@@ -159,8 +166,8 @@ var message_body  = {
 
     encryptText : function(plain, key, hint) {
         var v, i;
-        var prefix = "-- Encrypted: decrypt with Thunderbird Cryption_symmetric Plugin\n -- Base64 Encrypted\n\n",
-        suffix = "\n--  End encrypted message\n\n" + "--  This is ur password hint, in case -- " + hint;
+        var prefix = "-- Encrypted: Decrypt with Thunderbird Cryption_symmetric Plugin in Mozilla Thunderbird"+"\n\n"+ "-- Base64 Encrypted"+"\n\n",
+        suffix = "\n"+ "--  End encrypted message"+"\n\n" + "--  This is ur password hint -- " + hint;
 
         this.setKey(key);
 

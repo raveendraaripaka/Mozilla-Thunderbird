@@ -32,7 +32,6 @@ var status_bar  = {
     },
 
     onMenuItemCommand: function() {
-        //alert(this.getString("Continue_Confirm"));
         window.open("chrome://Cryption_Symmetric/content/options.xul", "", "chrome,titlebar,toolbar,centerscreen,modal");
     },
 
@@ -63,7 +62,7 @@ var status_bar  = {
             messenger.messageServiceFromURI(uri).streamMessage(uri, listener, null, null, false, "");
             var folder = aMessageHeader.folder;
             var selection =folder.getMsgTextFromStream(listener.inputStream, aMessageHeader.Charset, 65536, 32768, false, true,{ });
-
+            selection = selection.split("<br>").join("\n");
             
             var pass = document.getElementById("password").value;
 
@@ -75,18 +74,19 @@ var status_bar  = {
                 else{
                     try {
                         decrypted = status_bar.decryptText(selection.toString(), pass);
+
                     } catch(E) {
                         decrypted = status_bar.seekText(selection.toString());
                         decrypted = status_bar.decryptText(decrypted, pass.value);
                     }
-
+                    decrypted = decrypted.split("\n").join("<br>");
                     document.getElementById("wrapper").setAttribute("hidden", "false");
-                    document.getElementById('desc').textContent =decrypted;
+                    var messageBody = document.getElementById("content-frame").contentDocument.body;
+                    messageBody.innerHTML = decrypted;
                 }
             } catch(E) {
                 alert("Decryption failed. Propably the password is wrong, or the text is not encrypted");
             }
-
         }
     },
 

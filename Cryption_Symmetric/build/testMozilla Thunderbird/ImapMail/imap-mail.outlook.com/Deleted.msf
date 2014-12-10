@@ -1,13 +1,16 @@
 // <!-- <mdb:mork:z v="1.4"/> -->
 < <(a=c)> // (f=iso-8859-1)
   (B8=highestModSeq)(B9=imapFlags)(BA=charSetOverride)(BB=charSet)
-  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
-  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
-  (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=bccList)
-  (8F=msgThreadId)(90=threadId)(91=threadFlags)(92=threadNewestMsgDate)
-  (93=children)(94=unreadChildren)(95=threadSubject)(96=msgCharSet)
-  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
-  (99=ns:msg:db:table:kind:allthreads)
+  (BC=highestRecordedUID)(BD=ns:msg:db:row:scope:pending:all)
+  (BE=ns:msg:db:table:kind:pending)(BF=dateReceived)(C0=ProtoThreadFlags)
+  (C1=keywords)(C2=imageSize)(C3=junkscore)(C4=sender_name)
+  (C5=folderName)(80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)
+  (83=message-id)(84=references)(85=recipients)(86=date)(87=size)
+  (88=flags)(89=priority)(8A=label)(8B=statusOfset)(8C=numLines)
+  (8D=ccList)(8E=bccList)(8F=msgThreadId)(90=threadId)(91=threadFlags)
+  (92=threadNewestMsgDate)(93=children)(94=unreadChildren)
+  (95=threadSubject)(96=msgCharSet)(97=ns:msg:db:table:kind:msgs)
+  (98=ns:msg:db:table:kind:thread)(99=ns:msg:db:table:kind:allthreads)
   (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
   (9D=msgOffset)(9E=offlineMsgSize)
   (9F=ns:msg:db:row:scope:dbfolderinfo:all)
@@ -18,24 +21,62 @@
   (AD=fixedBadRefThreading)(AE=onlineName)(AF=indexingPriority)
   (B0=useServerRetention)(B1=MRUTime)(B2=sortType)(B3=sortOrder)
   (B4=viewFlags)(B5=viewType)(B6=sortColumns)(B7=columnStates)>
-{1:^80 {(k^97:c)(s=9)} }
-{FFFFFFFD:^9A {(k^99:c)(s=9)} }
+<(92=18f3b)(8E=54886175)(86=0)(80=1)>
+[1:m(^9C^92)(^90^92)(^92^8E)(^91=0)(^93=1)]
 
-<(80=1)(81=Deleted)(82=82114)(83=-1)(84=1417630933)(85=12)(86=0)(87=)
-  (88
+<(8A="CodeProject" <mailout@maillist.codeproject.com>)(8B
+    ="Member 10667283" <raveendraaripaka@hotmail.com>)(8C
+    =CodeProject | Offers - Defend Against Injection Based Attacks)
+  (8D=20141210151503.3ED4C14E9DC@mail.maillist.codeproject.com)(8F
+    =us-ascii)(94=1b8a)(91=ffffffff)(93=1|CodeProject)>
+{1:^80 {(k^97:c)(s=9)} 
+  [18F3B(^88=1)(^8B=0)(^82^8A)(^85^8B)(^81^8C)(^83^8D)(^86^8E)(^BF^8E)
+    (^89=1)(^96^8F)(^87^94)(^9B^91)(^8F^92)(^C0=0)(^C4^93)]}
+{18F3B:^80 {(k^98:c)(s=9)1:m } 18F3B }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [18F3B(^95^8C)]}
+
+<(81=Deleted)(82=82114)(83=-1)(84=1418228828)(85=12)(87=)(88
     ={"threadCol":{"visible":true},"attachmentCol":{"visible":true},"flaggedCo\
 l":{"visible":true},"subjectCol":{"visible":true},"unreadButtonColHeader":{"vi\
 sible":true},"senderCol":{"visible":true},"recipientCol":{"visible":false},"ju\
 nkStatusCol":{"visible":true},"dateCol":{"visible":true},"locationCol":{"visib\
-le":false}})>
-{1:^9F {(k^A0:c)(s=9u)} 
+le":false}})(89=2dcd85f)>
+{1:^9F {(k^A0:c)(s=9)} 
   [1(^AC=1)(^AD=1)(^AE^81)(^88^82)(^A7^81)(^AF=-1)(^B0=1)(^B1^84)(^B2=12)
-    (^B3=1)(^B4=0)(^B5=0)(^B6=)(^B7^88)(^B8=0)(^B9=0)]}
+    (^B3=1)(^B4=0)(^B5=0)(^B6=)(^B7^88)(^B8=)(^B9=0)(^A8^89)(^BC^92)
+    (^A1=1)(^A6^92)]}
 
-@$${1{@
+@$${2{@
 < <(a=c)> // (f=iso-8859-1)
-  (BC=highestRecordedUID)(BD=folderName)>
-<(89=2dcd85f)>[-1:^9F(^AC=1)(^AD=1)(^AE^81)(^88^82)(^A7^81)(^AF=-1)
-    (^B0=1)(^B1^84)(^B2=12)(^B3=1)(^B4=0)(^B5=0)(^B6=)(^B7^88)(^B8=)
-    (^B9=0)(^A8^89)(^BC=0)]
-@$$}1}@
+  (C6=remoteContentPolicy)(C7=gloda-id)(C8=gloda-dirty)>
+[-1:m(^9C^92)(^90^92)(^92=0)(^91=0)(^93=0)]
+{-1:^80 {(k^97:c)(s=9)} }
+{-18F3B:^80 {(k^98:c)(s=9)1:m } }[-18F3B:^80]
+{-FFFFFFFD:^9A {(k^99:c)(s=9)} }
+[1:^9F(^A1=0)]
+@$$}2}@
+
+@$${3{@
+@$$}3}@
+
+@$${4{@
+< <(a=c)> // (f=iso-8859-1)
+  (C9=ns:msg:db:row:scope:ops:all)(CA=ns:msg:db:table:kind:ops)>
+[-1:m(^9C^92)(^90^92)(^92=0)(^91=0)(^93=0)]
+{-1:^80 {(k^97:c)(s=9)} }
+{-18F3B:^80 {(k^98:c)(s=9)1:m } }[-18F3B:^80]
+[-18F3B:^9A(^95^8C)]
+[-1:^9F(^AC=1)(^AD=1)(^AE^81)(^88^82)(^A7^81)(^AF=-1)(^B0=1)(^B1^84)
+    (^B2=12)(^B3=1)(^B4=0)(^B5=0)(^B6=)(^B7^88)(^B8=0)(^B9=0)(^A8^89)
+    (^BC^92)(^A1=0)(^A6^92)]
+{-1:^C9 {(k^CA:c)(s=9)} }
+@$$}4}@
+
+@$${5{@
+@$$}5}@
+
+@$${6{@
+@$$}6}@
+
+@$${7{@
+@$$}7}@

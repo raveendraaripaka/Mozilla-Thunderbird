@@ -18,7 +18,7 @@
         <toolbarbutton id="button-address" class="toolbarbutton-1" label="Address Book" oncommand="toAddressBook();" tooltiptext="Go to the address book" removable="true"/>
         <toolbarseparator id="separator14175533326251" removable="true"/>
 <!--My toolbar Button-->
-        <toolbarbutton class="toolbarbutton-1" type="menu-button" id="Cryption-2" label="Decryption bar" tooltiptext="Decryption bar" removable="true">
+        <toolbarbutton class="toolbarbutton-1" type="menu-button" id="Cryption-2" label="Decryption" tooltiptext="Enable/Disable Decryption Bar" removable="true" image="chrome://Cryption_Symmetric/skin/Decrypt_toolbar.png">
             <menupopup id="encryptionbar_options">
                 <menuitem id="decryptionbar_options_enable"  label="Enable"  oncommand="status_bar.showDecryptionBar_enable();" type="radio" />
                 <menuitem id="decryptionbar_options_disable" label="Disable" oncommand="status_bar.showDecryptionBar_disable();" type="radio" />
@@ -59,15 +59,16 @@
                     </vbox>
                 </hbox>
                 <hbox align="right">
-                    <button id="decrypt_data" label="Decrypt Mail" oncommand="status_bar.decrypt_mail();"/>
-                    <button id="button_options" label="Quick toolkit" oncommand="status_bar.onMenuItemCommand();"/>
-                    <button id="button_close" label="Close" oncommand="status_bar.close();"/>
+                    <button id="decrypt_data"   label="     Decrypt Mail"   image="chrome://Cryption_Symmetric/skin/Decrypt.png"     oncommand="status_bar.decrypt_mail();"      tooltiptext="Decrypt the Mail above"/>
+                    <button id="button_options" label="     Toolkit"        image="chrome://Cryption_Symmetric/skin/Toolkit.png"     oncommand="status_bar.onMenuItemCommand();" tooltiptext="Quick Toolkit for Encryption/Decryption"/>
+                    <button id="button_close"   label="     Close"          image="chrome://Cryption_Symmetric/skin/Close.png"       oncommand="status_bar.close();"             tooltiptext="Hide and Clear the Decrypted Text Below"/>
                 </hbox>
             </hbox>
         </groupbox>
 
         <hbox id = "wrapper" flex="1" style="overflow:auto" hidden="true">
-            <description id="desc" style="width: 300px"></description>
+            <editor type="content-primary" id="content-frame" src="about:blank" name="browser.message.body" flex="1"
+                    ondblclick="EditorDblClick(event);" context="msgComposeContext" editortype="htmlmail"/>
         </hbox>
         
     </vbox>

@@ -161,8 +161,8 @@ var Cryption_Symmetric_Options  = {
 
     encryptText : function(plain, key, hint) {
         var v, i;
-        var prefix = "-- Encrypted: decrypt with Thunderbird Cryption_symmetric Plugin\n -- Base64 Encrypted\n\n",
-        suffix = "\n--  End encrypted message\n\n" + "--  This is ur password hint, in case -- " + hint;
+        var prefix = "-- Encrypted: Decrypt with Thunderbird Cryption_symmetric Plugin in Mozilla Thunderbird\n\n -- Base64 Encrypted\n\n",
+        suffix = "\n--  End encrypted message\n\n" + "--  This is ur password hint -- " + hint;
 
         this.setKey(key);
 

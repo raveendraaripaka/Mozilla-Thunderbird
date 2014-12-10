@@ -20,6 +20,11 @@
   (B4=daysToKeepBodies)(B5=keepUnreadOnly)(B6=useServerDefaults)
   (B7=cleanupBodies)>
 
-<(80=1)(81=804)(82=Unsent Messages)(83=0)(84=547f51f3)(85=Outbox)>
+<(80=1)(81=804)(82=Unsent Messages)(83=0)(84=5488727b)(85=Outbox)>
 {1:^9F {(k^A0:c)(s=9u)} 
   [1(^AC=1)(^AD=1)(^88^81)(^A7^82)(^A3=0)(^A5^84)(^AE^85)(^B9=1)]}
+
+@$${1{@
+{-1:^80 {(k^97:c)(s=9)} }
+{-FFFFFFFD:^9A {(k^99:c)(s=9)} }
+@$$}1}@

@@ -509,7 +509,7 @@ function rijndaelEncrypt(plaintext, key, mode) {
 }
 
 // rijndaelDecrypt(ciphertext, key, mode)
-// Decrypts the using the given key and mode. The parameter "ciphertext" 
+// Decrypts using the given key and mode. The parameter "ciphertext" 
 // must be an array of bytes. The parameter "key" must be an array of key 
 // bytes. If you have a hex string representing the ciphertext or key, 
 // invoke hexToByteArray() on it to convert it to an array of bytes. The
