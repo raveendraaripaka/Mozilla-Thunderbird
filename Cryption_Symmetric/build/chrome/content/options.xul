@@ -25,18 +25,24 @@
         </hbox>
         <hbox>
             <groupbox>
-                <caption label = "Encryption"/>
+                <caption label = "Enter plain text here for encryption"/>
                 <vbox >
                     <textbox id="Encrypt" placeholder="Enter text to be encrypted" width="625" height="625" multiline="true" focused="true" autocompletesearch="history"/>
-                    <button id="Encrypt-button" style="background-color: grey;" label="Encryption" image="chrome://Cryption_Symmetric/skin/Encrypt_toolbar.png" width="20" oncommand="Cryption_Symmetric_Options.encrypt();"  />
+                    <hbox >
+                        <button id="Encrypt-button" style="background-color: grey;" label="  Encryption" image="chrome://Cryption_Symmetric/skin/Encrypt_toolbar.png" width="600" oncommand="Cryption_Symmetric_Options.encrypt();"  />
+                        <button id= "copy_decrypted" image="chrome://Cryption_Symmetric/skin/copy.png" tooltiptext="Copy the decrypted text" width="25" oncommand="Cryption_Symmetric_Options.copy_encrypt_to_clipboard();"/>
+                    </hbox >
                 </vbox>
             </groupbox>
 
             <groupbox>
-                <caption label = "Decryption"/>
+                <caption label = "Text after Decryption"/>
                 <vbox >
                     <textbox id="Decrypt" placeholder="Enter text to be decrypted" width="625" height="625" multiline="true" focused="true" autocompletesearch="history"/>
-                    <button id="Decrypt-button" label="Decryption" image="chrome://Cryption_Symmetric/skin/Decrypt_toolbar.png" tooltiptext="Decrypt the above text" width="20" oncommand="Cryption_Symmetric_Options.decrypt();" />
+                    <hbox >
+                        <button id="Decrypt-button" label="  Decryption" image="chrome://Cryption_Symmetric/skin/Decrypt_toolbar.png" tooltiptext="Decrypt the above text" width="600" oncommand="Cryption_Symmetric_Options.decrypt();" />
+                        <button id= "copy_decrypted" image="chrome://Cryption_Symmetric/skin/copy.png" tooltiptext="Copy the decrypted text" width="25" oncommand="Cryption_Symmetric_Options.copy_decrypt_to_clipboard();"/>
+                    </hbox>
                 </vbox>
             </groupbox>
         </hbox>

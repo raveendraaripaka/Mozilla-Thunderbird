@@ -11,7 +11,7 @@
         <em:creator>{auther}</em:creator>
         <em:optionsURL>chrome://{appname}/content/options.xul</em:optionsURL>
         <em:iconURL>chrome://{appname}/skin/mainicon.png</em:iconURL>
-        <em:homepageURL>http://www.teesoft.info/</em:homepageURL>
+        <em:homepageURL>http://www.tsn.hhu.de/code/cryption.html</em:homepageURL>
         <em:contributor>someone</em:contributor>
         <em:translator>someone</em:translator>
         

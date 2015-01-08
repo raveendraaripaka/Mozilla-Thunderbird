@@ -62,13 +62,14 @@
                     <button id="decrypt_data"   label="     Decrypt Mail"   image="chrome://{appname}/skin/Decrypt.png"     oncommand="status_bar.decrypt_mail();"      tooltiptext="Decrypt the Mail above"/>
                     <button id="button_options" label="     Toolkit"        image="chrome://{appname}/skin/Toolkit.png"     oncommand="status_bar.onMenuItemCommand();" tooltiptext="Quick Toolkit for Encryption/Decryption"/>
                     <button id="button_close"   label="     Close"          image="chrome://{appname}/skin/Close.png"       oncommand="status_bar.close();"             tooltiptext="Hide and Clear the Decrypted Text Below"/>
+                    <button id= "copy_decrypted_compose"     label="     Copy" image="chrome://{appname}/skin/Close_1.png"        oncommand="status_bar.copy_decrypt_to_clipboard();" tooltiptext="Copy the decrypted text"/>
                 </hbox>
             </hbox>
         </groupbox>
 
         <hbox id = "wrapper" flex="1" style="overflow:auto" hidden="true">
             <editor type="content-primary" id="content-frame" src="about:blank" name="browser.message.body" flex="1"
-                    ondblclick="EditorDblClick(event);" context="msgComposeContext" editortype="htmlmail"/>
+                    context="msgComposeContext" editortype="htmlmail"/>
         </hbox>
         
     </vbox>

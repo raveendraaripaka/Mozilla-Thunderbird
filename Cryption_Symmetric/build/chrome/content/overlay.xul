@@ -4,7 +4,7 @@
 <overlay id="Cryption_Symmetric-overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
    
-    <script src="context_menu.js"/>
+    <script src="overlay.js"/>
 
 <!-- thunderbird -->
     <menupopup id="taskPopup">
@@ -12,15 +12,121 @@
               oncommand="context_menu.onMenuItemCommand(event);"/>
     </menupopup>
 
-    
-<!--Context Menu Dropdown List-->
-    <popup id="mailContext">
-        <menuitem id="quick-encrypt-text"
-                      label="Quick Encrypt"
-                      oncommand="context_menu.encrypt();" />
-        <menuitem id="quick-decrypt"
-                      label="Quick Decrypt"
-                      oncommand="context_menu.decrypt();" />        
-    </popup>
+    <menupopup id="mailContext" pagemenu="start" onpopupshowing="return fillMailContextMenu(event);" onpopuphiding="mailContextOnPopupHiding(event);" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+        <menuseparator id="page-menu-separator" hidden="true"/>
+        <menuitem id="mailContext-spell-no-suggestions" disabled="true" label="(No Spelling Suggestions)" hidden="true"/>
+        <menuitem id="mailContext-spell-add-to-dictionary" label="Add to Dictionary" accesskey="o" oncommand="gSpellChecker.addToDictionary();" hidden="true"/>
+        <menuseparator id="mailContext-spell-suggestions-separator" hidden="true"/>
+        <menuitem id="mailContext-openInBrowser" label="Open In Browser" accesskey="O" oncommand="gContextMenu.openInBrowser();" hidden="true"/>
+        <menuitem id="mailContext-openLinkInBrowser" label="Open Link In Browser" accesskey="O" oncommand="gContextMenu.openLinkInBrowser();" hidden="true"/>
+        <menuseparator id="mailContext-sep-open-browser" hidden="true"/>
+        <menuitem id="mailContext-reload" label="Reload" accesskey="R" command="cmd_reload" hidden="true"/>
+        <menuitem id="mailContext-stop" label="Stop" accesskey="S" command="cmd_stop" hidden="true" disabled="true"/>
+        <menuseparator id="mailContext-sep-link" hidden="true"/>
+        <menuitem id="mailContext-undo" label="Undo" accesskey="U" command="cmd_undo" hidden="true" disabled="true"/>
+        <menuseparator id="mailContext-sep-undo" hidden="true"/>
+        <menuitem id="mailContext-cut" label="Cut" accesskey="t" command="cmd_copy" hidden="true" disabled="true"/>
+        <menuitem id="mailContext-copy" label="Copy" accesskey="c" command="cmd_copy" hidden="true" disabled="true"/>
+        <menuitem id="mailContext-paste" label="Paste" accesskey="p" command="cmd_paste" hidden="true" disabled="true"/>
+        <menuitem id="mailContext-selectall" label="Select All" accesskey="a" command="cmd_selectAll" hidden="true"/>
+        <menuseparator id="mailContext-sep-clipboard" hidden="true"/>
+        <menuitem id="mailContext-searchTheWeb" label="[glodaComplete.webSearch1.label]" oncommand="openSearchTab(event.target.value)" hidden="true"/>
+        <menuseparator id="mailContext-spell-separator" hidden="true"/>
+        <menuitem id="mailContext-spell-check-enabled" label="Check Spelling" type="checkbox" accesskey="g" oncommand="gSpellChecker.toggleEnabled();" hidden="true"/>
+        <menuitem id="mailContext-spell-add-dictionaries-main" label="Add Dictionaries…" accesskey="A" oncommand="gContextMenu.addDictionaries();" hidden="true"/>
+        <menu id="mailContext-spell-dictionaries" label="Languages" accesskey="l" hidden="true">
+            <menupopup id="mailContext-spell-dictionaries-menu">
+                <menuseparator id="mailContext-spell-language-separator"/>
+                <menuitem id="mailContext-spell-add-dictionaries" label="Add Dictionaries…" accesskey="A" oncommand="gContextMenu.addDictionaries();"/>
+            </menupopup>
+        </menu>
+        <menuseparator id="mailContext-sep-open" hidden="true"/>
+        <menuitem id="mailContext-media-play" label="Play" accesskey="P" oncommand="gContextMenu.mediaCommand('play');" hidden="true"/>
+        <menuitem id="mailContext-media-pause" label="Pause" accesskey="P" oncommand="gContextMenu.mediaCommand('pause');" hidden="true"/>
+        <menuitem id="mailContext-media-mute" label="Mute" accesskey="M" oncommand="gContextMenu.mediaCommand('mute');" hidden="true"/>
+        <menuitem id="mailContext-media-unmute" label="Unmute" accesskey="m" oncommand="gContextMenu.mediaCommand('unmute');" hidden="true"/>
+        <menuitem id="threadPaneContext-openNewTab" label="Open Message in New Tab" accesskey="T" oncommand="OpenMessageInNewTab(event);"/>
+        <menuitem id="mailContext-openNewWindow" label="Open Message in New Window" accesskey="W" oncommand="MsgOpenNewWindowForMessage();"/>
+        <menuitem id="mailContext-openConversation" label="Open Message in Conversation" accesskey="n" oncommand="gConversationOpener.openConversationForMessages(gFolderDisplay.selectedMessages);"/>
+        <menuitem id="mailContext-openContainingFolder" label="Open Message in Containing Folder" accesskey="n" oncommand="OpenContainingFolder();" hidden="true"/>
+        <!--        Cryption_symmetric Context Menu-->
+        <menuseparator id="Cryption-symmetric-separator" />
+        <menuitem id="quick-decrypt" label="Quick Decrypt" oncommand="context_menu.decrypt();" insertafter = "mailContext-openContainingFolder"/>
+        <!--        Ends Here-->
+        <menuseparator id="mailContext-sep-open2"/>
+        <menuitem id="mailContext-replyNewsgroup" label="Followup to Newsgroup" accesskey="u" oncommand="MsgReplyGroup(event);" hidden="true"/>
+        <menuitem id="mailContext-replySender" label="Reply to Sender Only" accesskey="R" oncommand="MsgReplySender(event);"/>
+        <menuitem id="mailContext-replyAll" label="Reply to All" accesskey="A" oncommand="MsgReplyToAllMessage(event);"/>
+        <menuitem id="mailContext-replyList" label="Reply to List" accesskey="L" oncommand="MsgReplyToListMessage(event);"/>
+        <menuitem id="mailContext-forward" label="Forward" accesskey="F" oncommand="MsgForwardMessage(event);"/>
+        <menu id="mailContext-forwardAsMenu" label="Forward As" accesskey="o">
+            <menupopup id="mailContext-forwardAsPopup">
+                <menuitem id="mailContext-forwardAsInline" label="Inline" accesskey="I" command="cmd_forwardInline"/>
+                <menuitem id="mailContext-forwardAsAttachment" label="Attachment" accesskey="A" command="cmd_forwardAttachment"/>
+            </menupopup>
+        </menu>
+        <menuitem id="mailContext-multiForwardAsAttachment" label="Forward as Attachments" accesskey="o" oncommand="MsgForwardAsAttachment(event);" hidden="true"/>
+        <menuitem id="mailContext-editAsNew" label="Edit As New Message" accesskey="E" oncommand="MsgEditMessageAsNew();"/>
+        <menuseparator id="mailContext-sep-reply"/>
+        <menu id="mailContext-tags" label="Tag" accesskey="g">
+            <menupopup id="mailContext-tagpopup" onpopupshowing="InitMessageTags(this);">
+                <menuitem id="addNewTag" label="New Tag…" accesskey="N" command="cmd_addTag"/>
+                <menuitem id="manageTags" label="Manage Tags…" accesskey="M" command="cmd_manageTags"/>
+                <menuseparator id="mailContext-sep-afterTagAddNew"/>
+                <menuitem id="mailContext-tagRemoveAll" command="cmd_removeTags" accesskey="0" acceltext="0" label="0 Remove All Tags"/>
+                <menuseparator id="mailContext-sep-afterTagRemoveAll"/>
+                <menuitem accesskey="1" acceltext="1" label="1 Important" value="$label1" type="checkbox" checked="false" oncommand="ToggleMessageTagMenu(event.target);" class="lc-FF0000"/>
+                <menuitem accesskey="2" acceltext="2" label="2 Work" value="$label2" type="checkbox" checked="false" oncommand="ToggleMessageTagMenu(event.target);" class="lc-FF9900"/>
+                <menuitem accesskey="3" acceltext="3" label="3 Personal" value="$label3" type="checkbox" checked="false" oncommand="ToggleMessageTagMenu(event.target);" class="lc-009900"/>
+                <menuitem accesskey="4" acceltext="4" label="4 To Do" value="$label4" type="checkbox" checked="false" oncommand="ToggleMessageTagMenu(event.target);" class="lc-3333FF"/>
+                <menuitem accesskey="5" acceltext="5" label="5 Later" value="$label5" type="checkbox" checked="false" oncommand="ToggleMessageTagMenu(event.target);" class="lc-993399"/>
+            </menupopup>
+        </menu>
+        <menu id="mailContext-mark" label="Mark" accesskey="k">
+            <menupopup id="mailContext-markPopup" onpopupshowing="InitMessageMark()">
+                <menuitem id="mailContext-markRead" label="As Read" accesskey="R" command="cmd_markAsRead" disabled="true"/>
+                <menuitem id="mailContext-markUnread" label="As Unread" accesskey="U" command="cmd_markAsUnread"/>
+                <menuitem id="mailContext-markThreadAsRead" label="Thread As Read" accesskey="T" command="cmd_markThreadAsRead"/>
+                <menuitem id="mailContext-markReadByDate" label="As Read by Date…" accesskey="D" command="cmd_markReadByDate"/>
+                <menuitem id="mailContext-markAllRead" label="All Read" accesskey="A" command="cmd_markAllRead"/>
+                <menuseparator id="mailContext-sep-afterMarkAllRead"/>
+                <menuitem id="mailContext-markFlagged" type="checkbox" label="Add Star" accesskey="S" command="cmd_markAsFlagged" checked="false"/>
+                <menuseparator id="mailContext-sep-afterMarkFlagged"/>
+                <menuitem id="mailContext-markAsJunk" label="As Junk" accesskey="J" command="cmd_markAsJunk"/>
+                <menuitem id="mailContext-markAsNotJunk" label="As Not Junk" accesskey="N" command="cmd_markAsNotJunk"/>
+                <menuitem id="mailContext-recalculateJunkScore" label="Run Junk Mail Controls" accesskey="C" command="cmd_recalculateJunkScore"/>
+            </menupopup>
+        </menu>
+        <menuseparator id="mailContext-sep-afterMarkMenu"/>
+        <menuitem id="mailContext-copyMessageUrl" label="Copy Message Location" accesskey="M" oncommand="CopyMessageUrl()" hidden="true"/>
+        <menuitem id="mailContext-archive" label="Archive" accesskey="h" oncommand="MsgArchiveSelectedMessages(event);"/>
+        <menu id="mailContext-moveMenu" label="Move To" accesskey="M" oncommand="MsgMoveMessage(event.target._folder)">
+            <menupopup id="mailContext-fileHereMenu" type="folder" mode="filing" showFileHereLabel="true" showRecent="true" recentLabel="Recent" recentAccessKey="R"/></menu>
+        <menu id="mailContext-copyMenu" label="Copy To" accesskey="C" oncommand="MsgCopyMessage(event.target._folder)">
+            <menupopup id="mailContext-copyHereMenu" type="folder" mode="filing" showFileHereLabel="true" showRecent="true" recentLabel="Recent" recentAccessKey="R"/></menu>
+        <menuitem id="mailContext-moveToFolderAgain" command="cmd_moveToFolderAgain" label="Move to &quot;Registrations&quot; Again" accesskey="i"/>
+        <menuseparator id="paneContext-afterMove"/>
+        <menuitem id="mailContext-ignoreThread" label="Ignore Thread" accesskey="I" command="cmd_killThread" checked="false"/>
+        <menuitem id="mailContext-ignoreSubthread" label="Ignore Subthread" command="cmd_killSubthread" checked="false"/>
+        <menuitem id="mailContext-watchThread" label="Watch Thread" command="cmd_watchThread" checked="false"/>
+        <menuseparator id="mailContext-afterWatchThread"/>
+        <menuitem id="mailContext-saveAs" label="Save As…" accesskey="S" oncommand="MsgSaveAsFile();"/>
+        <menuitem id="mailContext-printpreview" label="Print Preview" accesskey="v" observes="cmd_printpreview" command="cmd_printpreview" oncommand="goDoCommand('cmd_printpreview')"/>
+        <menuitem id="mailContext-print" label="Print…" accesskey="P" observes="cmd_print" command="cmd_print" oncommand="goDoCommand('cmd_print')"/>
+        <menuitem id="mailContext-delete" command="cmd_delete" label="Delete Message" accesskey="D"/>
+        <menuitem id="downloadSelected" label="Get Selected Messages" accesskey="l" command="cmd_downloadSelected" hidden="true" disabled="true"/>
+        <menuseparator id="mailContext-sep-edit" hidden="true"/>
+        <menuitem id="mailContext-copylink" label="Copy Link Location" accesskey="L" command="cmd_copyLink" hidden="true" disabled="false"/>
+        <menuitem id="mailContext-copyimage" label="Copy Image" accesskey="I" command="cmd_copyImage" hidden="true" disabled="false"/>
+        <menuitem id="mailContext-addemail" label="Add to Address Book…" accesskey="B" oncommand="addEmail();" hidden="true"/>
+        <menuitem id="mailContext-composeemailto" label="Compose Message To" accesskey="s" oncommand="composeEmailTo();" hidden="true"/>
+        <menuitem id="mailContext-copyemail" label="Copy Email Address" accesskey="E" oncommand="gContextMenu.copyEmail();" hidden="true"/>
+        <menuseparator id="mailContext-sep-copy" hidden="true"/>
+        <menuitem id="mailContext-savelink" label="Save Link As…" accesskey="k" oncommand="gContextMenu.saveLink();" hidden="true"/>
+        <menuitem id="mailContext-saveimage" label="Save Image As…" accesskey="v" oncommand="gContextMenu.saveImage();" hidden="true"/>
+        <menuseparator id="mailContext-sep-reportPhishing" hidden="true"/>
+        <menuitem id="mailContext-reportPhishingURL" label="Report Email Scam" accesskey="o" oncommand="gPhishingDetector.reportPhishingURL(gContextMenu.linkURL);" hidden="true"/>
+        
+    </menupopup>
 
 </overlay>

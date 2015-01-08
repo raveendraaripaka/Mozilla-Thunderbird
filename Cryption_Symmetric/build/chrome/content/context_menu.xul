@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://helloword/locale/helloword.dtd">
+
+<overlay id="context_menu"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script src="context_menu_view.js"/>
+
+    <hbox id = "wrapper" flex="1" style="overflow:auto" hidden="true">
+        <editor type="content-primary" id="content-context-menu" src="about:blank" name="browser.message.body" flex="1"
+                    context="msgComposeContext" editortype="htmlmail"/>
+    </hbox>
+  
+</overlay>

@@ -10,8 +10,6 @@ var context_menu  = {
         this.initialized = true;
         context_menu.init();
 
-
-
         this.gfiltersimportexportBundle = Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService);
         this.mystrings = this.gfiltersimportexportBundle.createBundle("chrome://Cryption_Symmetric/locale/overlay.properties");
     },
@@ -64,18 +62,12 @@ var context_menu  = {
                 }
                 decrypted = decrypted.split("\n").join("<br>");
 
-                //                var gClipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper);
-                //                gClipboardHelper.copyString(decrypted);
-
                 if (!((target instanceof HTMLInputElement) || (target instanceof HTMLTextAreaElement))) {
                     window.openDialog("chrome://Cryption_Symmetric/content/context_decrypted.xul", "", "chrome,titlebar,toolbar,centerscreen,modal", {
                         decryptText : decrypted,
-                        Password : pass.value ,
+                        Password : pass.value,
                         decryptSelection : selection
                     });
-
-                
-
                 } else {
                     target.value = target.value.substr(0, target.selectionStart) + encrypted + target.value.substr(target.selectionEnd, target.value.length-target.selectionEnd);
                 }
@@ -96,7 +88,6 @@ var context_menu  = {
         this.include("stegodict.js");
         this.include("utf-8.js");
         ce();
-
     },
 
     addEntropy : function(doc) {
@@ -190,124 +181,15 @@ var context_menu  = {
         //  That's it; plug plaintext into the result field
 
         return decode_utf8(plaintext);
-    },
-
-    //	Retrieve word given index in list of words of that length
-
-    retrieveWord : function(length, index) {
-        if ((length >= minw) && (length <= maxw) &&
-            (index >= 0) && (index < nwords[length])) {
-            return cwords[length].substring(length * index, length * (index + 1));
-        }
-        return "";
-    },
-
-    //	Obtain word by index in complete dictionary
-
-    indexWord : function(index) {
-        if ((index >= 0) && (index < twords)) {
-            var j;
-
-            for (j = minw; j <= maxw; j++) {
-                if (index < nwords[j]) {
-                    break;
-                }
-                index -= nwords[j];
-            }
-            return this.retrieveWord(j, index);
-        }
-        return "";
-    },
-
-    //	Hide text as words
-    hideText : function(ciphertext) {
-        var ct = new Array(), kt, padded = false;
-        var purng = new LEcuyer((new Date()).getTime());
-
-        ct = disarm_base64(ciphertext);
-
-        /*  Cipher text should always be an even number of bytes.
-	    If it isn't, pad it with a zero and set a flag to indicate
-	    we've added a pad.  */
-
-        if (ct.length & 1) {
-            ct[ct.length] = 0;
-            padded = true;
-        }
-
-        /*  Walk through cipher text two bytes at a time,
-	    assembling each pair into an index into our table
-	    of words.  Append each word to the hidden text.  */
-
-        var i, w, l = "", t = "";
-        var maxLine = 72, sl = 0, sc = 0, fpar = false, parl = purng.nextInt(9) + 3, puncture = true;
-
-        for (i = 0; i < ct.length; i += 2) {
-            w = this.indexWord((ct[i] << 8) | ct[i + 1]).toLowerCase();
-            if (puncture && (sl == 0)) {
-                w = w.substr(0, 1).toUpperCase() + w.substr(1, w.length);
-            }
-
-            /*	If this is the last word, put a period after it
-	    	unless we added a padding byte, in which case we
-		end with a bang to so indicate.  */
-
-            if (i == (ct.length - 2)) {
-                w += padded ? "!" : ".";
-            } else {
-                if (puncture) {
-
-                    //  Regular word.  Generate random but plausible punctuation
-
-                    sl++;
-                    if (sl >= (purng.nextInt(9) + 3)) {
-                        var p = purng.nextInt(15), pu;
-                        pu = (p <= 13) ? "." : ((p == 14) ? "?" : "!");
-                        w += pu + " ";
-                        sl = 0;
-                        sc++;
-                        if (sc >= parl) {
-                            fpar = true;
-                            sc = 0;
-                        }
-                    } else {
-                        if (purng.nextInt(6) == 6) {
-                            w += ",";
-                        }
-                    }
-                }
-            }
-            if ((l.length + w.length + 1) > maxLine) {
-                l = l.replace(/\s+$/, "");
-                t += l + "\n";
-                l = "";
-            }
-            if (l.length > 0) {
-                l += " ";
-            }
-            l += w;
-            if (fpar) {
-                l = l.replace(/\s+$/, "");
-                t += l + "\n\n";
-                l = "";
-                fpar = false;
-                parl = purng.nextInt(8) + 2;
-            }
-        }
-        t += l + "\n";
-
-        delete purng;
-        return t;
-    },
-
+    },  
+    
     //	Decode text from words
 
     seekText : function(stegotext) {
 
         var ct = new Array(), padded = false;
 
-        /*  Precompute table of cumulative words before those
-	    of a given length.  */
+        /*  Precompute table of cumulative words before those of a given length.  */
         var awords = new Array(), i, j;
         j = 0;
         for (i = minw; i <= maxw; i++) {

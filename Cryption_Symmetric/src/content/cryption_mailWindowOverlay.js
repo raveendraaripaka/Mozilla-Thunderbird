@@ -31,6 +31,17 @@ var status_bar  = {
         }
     },
 
+    copy_decrypt_to_clipboard: function(){
+
+        var messageBody = document.getElementById("content-frame").contentDocument.body;
+        var decrypted_text = messageBody.innerHTML;
+        decrypted_text = decrypted_text.split("<br>").join("\n");     
+
+        var gClipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper);
+        gClipboardHelper.copyString(decrypted_text);
+
+    },
+
     onMenuItemCommand: function() {
         window.open("chrome://{appname}/content/options.xul", "", "chrome,titlebar,toolbar,centerscreen,modal");
     },

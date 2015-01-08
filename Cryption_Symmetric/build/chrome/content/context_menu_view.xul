@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://helloword/locale/helloword.dtd">
+
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+        id="context_menu_view"
+        title="Decrypted Message!!">
+
+    <script src="context_menu_view.js"/>
+
+    <hbox flex="1">
+        <textbox id="myEditor" placeholder="Enter text to be decrypted" flex="1" multiline="true" focused="true"/>
+        <!--    <editor id="myEditor" editortype="html" src="about:blank" flex="1" type="content-primary"/>-->
+    </hbox>
+
+</window>

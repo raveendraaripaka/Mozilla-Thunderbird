@@ -18,7 +18,7 @@ var message_body  = {
 
         this.gfiltersimportexportBundle = Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService);
         this.stringbundle = this.gfiltersimportexportBundle.createBundle("chrome://Cryption_Symmetric/locale/overlay.properties");
-    },
+    },    
 
     getString:function(key) {
         try{
@@ -58,7 +58,7 @@ var message_body  = {
         try {
             var decrypted = false;
             if(pass == ""){
-                alert("enter the password below");
+                alert("Please enter the password below");
             }
             else{
                 try{
@@ -83,25 +83,24 @@ var message_body  = {
 
         var editor = document.getElementById("content-frame");
         var editorDocument = editor.contentDocument;
-//        editorDocument.designMode = 'on';
         var messageBody = editorDocument.getElementsByTagName("body")[0];
         var selection = messageBody.innerHTML;
         selection = selection.split("<br>").join("\n")
 
         if(selection  == null)
         {
-            alert("enter some text in the body to encrypt");
+            alert("Please enter some text in the body to encrypt");
         }
         else{
             var pass = document.getElementById("password").value;
             var hint = document.getElementById("password_hint").value;
             if(pass == ""){
-                alert("enter the password below");
+                alert("Please enter the password below");
             }
             else{
                 if(hint=="")
-                {
-                    hint="not provided";
+                {                    
+                    hint="Not provided";
                     var encrypted = message_body.encryptText(selection, pass, hint);
                     encrypted = encrypted.split("\n").join("<br>");
                     messageBody.innerHTML = encrypted;
@@ -166,8 +165,8 @@ var message_body  = {
 
     encryptText : function(plain, key, hint) {
         var v, i;
-        var prefix = "-- Encrypted: Decrypt with Thunderbird Cryption_symmetric Plugin in Mozilla Thunderbird"+"\n\n"+ "-- Base64 Encrypted"+"\n\n",
-        suffix = "\n"+ "--  End encrypted message"+"\n\n" + "--  This is ur password hint -- " + hint;
+        var prefix = "-- This mail is encrypted --"+"\n\n"+" -- Please decrypt this mail using Mozilla Thunderbird with the Cryption_Symmetric Plugin."+"\n-- Here you can download the Plugin: http://www.tsn.hhu.de/code/cryption.html "+"\n\n-- This is your password hint -- " + hint +"\n\n"+ "-- AES Specified Base64 Encryption --"+"\n\n",
+        suffix = "\n"+ "-- End encrypted message --" ;
 
         this.setKey(key);
 
@@ -195,18 +194,15 @@ var message_body  = {
         header += String.fromCharCode(i >>> 8);
         header += String.fromCharCode(i & 0xFF);
 
-        /*  The format of the actual message passed to rijndaelEncrypt
-	    is:
+        /*  The format of the actual message passed to rijndaelEncrypt is:
 
 	    	    Bytes   	Content
 		     0-15   	MD5 signature of plaintext
 		    16-19   	Length of plaintext, big-endian order
 		    20-end  	Plaintext
 
-	    Note that this message will be padded with zero bytes
-	    to an integral number of AES blocks (blockSizeInBits / 8).
-	    This does not include the initial vector for CBC
-	    encryption, which is added internally by rijndaelEncrypt.
+	    Note that this message will be padded with zero bytes to an integral number of AES blocks (blockSizeInBits / 8).
+	    This does not include the initial vector for CBC encryption, which is added internally by rijndaelEncrypt.
 
          */
 

@@ -16,21 +16,8 @@ var Cryption_Symmetric_Options  = {
         if (this.initialized) return;
         this.initialized = true;
         Cryption_Symmetric_Options.init();
-        
-        if(window.arguments[0].condition == "0"){
-            document.getElementById("Encrypt").value = window.arguments[0].encryptSelection;
-            document.getElementById("Decrypt").value = window.arguments[0].encryptText;
-            document.getElementById("some-password").value = window.arguments[0].Password;
-        }
-        else{
-            document.getElementById("Encrypt").value = window.arguments[0].decryptText;
-            document.getElementById("Decrypt").value = window.arguments[0].decryptSelection;
-            document.getElementById("some-password").value = window.arguments[0].Password;
-        }
-
         this.gfiltersimportexportBundle = Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService);
         this.stringbundle = this.gfiltersimportexportBundle.createBundle("chrome://{appname}/locale/overlay.properties");
-
     },
 
     getString:function(key) {
@@ -41,6 +28,20 @@ var Cryption_Symmetric_Options  = {
         catch(e){
             return key;
         }
+    },
+
+    copy_encrypt_to_clipboard:function(){
+        var encrypt_text = document.getElementById("Encrypt").value;
+
+        var gClipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper);
+        gClipboardHelper.copyString(encrypt_text);
+    },
+
+    copy_decrypt_to_clipboard: function(){
+        var decrypt_text = document.getElementById("Decrypt").value;
+
+        var gClipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper);
+        gClipboardHelper.copyString(decrypt_text);
     },
 
     encrypt : function() {
@@ -161,8 +162,8 @@ var Cryption_Symmetric_Options  = {
 
     encryptText : function(plain, key, hint) {
         var v, i;
-        var prefix = "-- Encrypted: Decrypt with Thunderbird Cryption_symmetric Plugin in Mozilla Thunderbird\n\n -- Base64 Encrypted\n\n",
-        suffix = "\n--  End encrypted message\n\n" + "--  This is ur password hint -- " + hint;
+        var prefix = "-- This mail is encrypted --"+"\n\n"+" -- Please decrypt this mail using Mozilla Thunderbird with the Cryption_Symmetric Plugin."+"\n-- Here you can download the Plugin: http://www.tsn.hhu.de/code/cryption.html "+"\n\n-- This is your password hint -- " + hint +"\n\n"+ "-- AES Specified Base64 Encryption --"+"\n\n",
+        suffix = "\n"+ "-- End encrypted message --" ;
 
         this.setKey(key);
 
@@ -190,18 +191,15 @@ var Cryption_Symmetric_Options  = {
         header += String.fromCharCode(i >>> 8);
         header += String.fromCharCode(i & 0xFF);
 
-        /*  The format of the actual message passed to rijndaelEncrypt
-	    is:
+        /*  The format of the actual message passed to rijndaelEncrypt is:
 
 	    	    Bytes   	Content
 		     0-15   	MD5 signature of plaintext
 		    16-19   	Length of plaintext, big-endian order
 		    20-end  	Plaintext
 
-	    Note that this message will be padded with zero bytes
-	    to an integral number of AES blocks (blockSizeInBits / 8).
-	    This does not include the initial vector for CBC
-	    encryption, which is added internally by rijndaelEncrypt.
+	    Note that this message will be padded with zero bytes to an integral number of AES blocks (blockSizeInBits / 8).
+	    This does not include the initial vector for CBC encryption, which is added internally by rijndaelEncrypt.
 
          */
 
@@ -221,30 +219,23 @@ var Cryption_Symmetric_Options  = {
         var header = result.slice(0, 20);
         result = result.slice(20);
 
-        /*  Extract the length of the plaintext transmitted and
-	    verify its consistency with the length decoded.  Note
-	    that in many cases the decrypted messages will include
-	    pad bytes added to expand the plaintext to an integral
+        /*  Extract the length of the plaintext transmitted and verify its consistency with the length decoded.  Note
+	    that in many cases the decrypted messages will include pad bytes added to expand the plaintext to an integral
 	    number of AES blocks (blockSizeInBits / 8).  */
 
         var dl = (header[16] << 24) | (header[17] << 16) | (header[18] << 8) | header[19];
         if ((dl < 0) || (dl > result.length)) {
             throw "Message (length " + result.length + ") truncated.  " +
-                dl + " characters expected.";
+            dl + " characters expected.";
             //	Try to sauve qui peut by setting length to entire message
             dl = result.length;
         }
 
-        /*  Compute MD5 signature of message body and verify
-	    against signature in message.  While we're at it,
-	    we assemble the plaintext result string.  Note that
-	    the length is that just extracted above from the
-	    message, *not* the full decrypted message text.
-	    AES requires all messages to be an integral number
-	    of blocks, and the message may have been padded with
-	    zero bytes to fill out the last block; using the
-	    length from the message header elides them from
-	    both the MD5 computation and plaintext result.  */
+        /*  Compute MD5 signature of message body and verify against signature in message.  While we're at it,
+	    we assemble the plaintext result string.  Note that the length is that just extracted above from the
+	    message, *not* the full decrypted message text. AES requires all messages to be an integral number
+	    of blocks, and the message may have been padded with zero bytes to fill out the last block; using the
+	    length from the message header elides them from both the MD5 computation and plaintext result.  */
 
         var i, plaintext = "";
 
@@ -298,8 +289,7 @@ var Cryption_Symmetric_Options  = {
 
         var ct = new Array(), padded = false;
 
-        /*  Precompute table of cumulative words before those
-	    of a given length.  */
+        /*  Precompute table of cumulative words before those of a given length.  */
         var awords = new Array(), i, j;
         j = 0;
         for (i = minw; i <= maxw; i++) {
@@ -318,7 +308,7 @@ var Cryption_Symmetric_Options  = {
             //	Look it up in the list of words of this length
 
             w = w.substring(0, 1).toUpperCase() +
-                w.substring(1, w.length);
+            w.substring(1, w.length);
             v = cwords[l].indexOf(w);
             if (v >= 0) {
                 v = (v / l) + awords[l];
